@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqqnswshxfrgs"
-path="res://.godot/imported/TopDownHouse_FloorsAndWalls.png-217b25ffdc10d67ccd18745e39e1396b.ctex"
+uid="uid://b5mrwt6rglaci"
+path="res://.godot/imported/costas.png-1ad7f953169770d3bacfd257284f3cf8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/objects/TopDownHouse_FloorsAndWalls.png"
-dest_files=["res://.godot/imported/TopDownHouse_FloorsAndWalls.png-217b25ffdc10d67ccd18745e39e1396b.ctex"]
+source_file="res://graphics/player/costas.png"
+dest_files=["res://.godot/imported/costas.png-1ad7f953169770d3bacfd257284f3cf8.ctex"]
 
 [params]
 
