@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blaq1i7axuadm"
-path="res://.godot/imported/jogador.png-cebfee1d5e57718412bb8443585de6b4.ctex"
+uid="uid://j0cr2yt0t4s3"
+path="res://.godot/imported/TopDownHouse_FurnitureState2.png-80facbb8c60535c8ac14492ddd0ad6df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/player/jogador.png"
-dest_files=["res://.godot/imported/jogador.png-cebfee1d5e57718412bb8443585de6b4.ctex"]
+source_file="res://graphics/maps/TopDownHouse_FurnitureState2.png"
+dest_files=["res://.godot/imported/TopDownHouse_FurnitureState2.png-80facbb8c60535c8ac14492ddd0ad6df.ctex"]
 
 [params]
 

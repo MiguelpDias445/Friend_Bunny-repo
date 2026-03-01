@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cn2nef440oh2b"
-path="res://.godot/imported/mapa.jpg-da0429fa800e258c010ce90857e80486.ctex"
+uid="uid://cbaxg780wap0s"
+path="res://.godot/imported/TopDownHouse_FloorsAndWalls.png-35dfb9bfcbc4dfa7b2ef5b96eb68f4aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/maps/mapa.jpg"
-dest_files=["res://.godot/imported/mapa.jpg-da0429fa800e258c010ce90857e80486.ctex"]
+source_file="res://graphics/maps/TopDownHouse_FloorsAndWalls.png"
+dest_files=["res://.godot/imported/TopDownHouse_FloorsAndWalls.png-35dfb9bfcbc4dfa7b2ef5b96eb68f4aa.ctex"]
 
 [params]
 
