@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2hams3c12m65"
-path="res://.godot/imported/TopDownHouse_FurnitureState2.png-fbeb555147b13c80c28a0c0b2337d760.ctex"
+uid="uid://e1p4vyjk4bch"
+path="res://.godot/imported/frente-andando3.png-17ddaa2ffcd979fe835691b840a9a711.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/objects/TopDownHouse_FurnitureState2.png"
-dest_files=["res://.godot/imported/TopDownHouse_FurnitureState2.png-fbeb555147b13c80c28a0c0b2337d760.ctex"]
+source_file="res://graphics/player/frente-andando3.png"
+dest_files=["res://.godot/imported/frente-andando3.png-17ddaa2ffcd979fe835691b840a9a711.ctex"]
 
 [params]
 

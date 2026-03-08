@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbaxg780wap0s"
-path="res://.godot/imported/TopDownHouse_FloorsAndWalls.png-35dfb9bfcbc4dfa7b2ef5b96eb68f4aa.ctex"
+uid="uid://cu3pu2mowerk7"
+path="res://.godot/imported/frente-andando6.png-872c3de48380e061df0f6e7c072f02f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/maps/TopDownHouse_FloorsAndWalls.png"
-dest_files=["res://.godot/imported/TopDownHouse_FloorsAndWalls.png-35dfb9bfcbc4dfa7b2ef5b96eb68f4aa.ctex"]
+source_file="res://graphics/player/frente-andando6.png"
+dest_files=["res://.godot/imported/frente-andando6.png-872c3de48380e061df0f6e7c072f02f0.ctex"]
 
 [params]
 
