@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://goxbdt145jgh"]
 
-[ext_resource type="Texture2D" uid="uid://cn2nef440oh2b" path="res://graphics/maps/mapa.jpg" id="1_uwrxv"]
-[ext_resource type="PackedScene" uid="uid://b1qv5oyhkmhp6" path="res://scenes/player.tscn" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://b1qv5oyhkmhp6" path="res://scenes/player/player.tscn" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://b8r8p5gxuvwuv" path="res://scenes/inventory/inv_ui.tscn" id="3_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://d2pruxw48i608" path="res://scenes/bed.tscn" id="3_lnu2h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yqjtg"]
@@ -13,11 +13,6 @@ size = Vector2(1171, 34)
 [node name="Game" type="Node2D" unique_id=320839026]
 metadata/_edit_horizontal_guides_ = [8.0, 13.0, 660.0, 647.0]
 metadata/_edit_vertical_guides_ = [1138.0]
-
-[node name="Mapa" type="Sprite2D" parent="." unique_id=1705603358]
-position = Vector2(577.99994, 331.5)
-scale = Vector2(0.88124996, 0.8875)
-texture = ExtResource("1_uwrxv")
 
 [node name="Player" parent="." unique_id=783761871 instance=ExtResource("2_yqjtg")]
 position = Vector2(522, 337)
@@ -52,3 +47,11 @@ shape = SubResource("RectangleShape2D_lnu2h")
 [node name="Bed" parent="." unique_id=989584858 instance=ExtResource("3_lnu2h")]
 position = Vector2(536, 15)
 scale = Vector2(0.5, 0.5)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2102744115]
+
+[node name="Inv_UI" parent="CanvasLayer" unique_id=712771937 instance=ExtResource("3_lbhrr")]
+offset_left = 500.0
+offset_top = 540.0
+offset_right = -455.0
+offset_bottom = -34.0

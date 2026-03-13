@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Inv" format=3 uid="uid://4tuhgnq5g88t"]
+
+[ext_resource type="Script" uid="uid://ctpuxmounpmrn" path="res://scenes/inventory/inventory_item.gd" id="1_sdg5b"]
+[ext_resource type="Resource" uid="uid://cyjii3bwxf28i" path="res://scenes/inventory/items/gun.tres" id="2_amvok"]
+[ext_resource type="Script" uid="uid://bh3odokhyfjqa" path="res://scenes/inventory/inventory.gd" id="3_jaomn"]
+
+[resource]
+script = ExtResource("3_jaomn")
+items = Array[ExtResource("1_sdg5b")]([ExtResource("2_amvok"), null, null, null, null, null])
+metadata/_custom_type_script = "uid://bh3odokhyfjqa"
