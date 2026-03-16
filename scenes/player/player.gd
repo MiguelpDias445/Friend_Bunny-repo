@@ -33,3 +33,9 @@ func animation():
 				sprite.play("down")
 	else:
 		$AnimatedSprite2D.frame = 0
+		
+func player():
+	pass
+
+func collect(item):
+	inv.insert(item)

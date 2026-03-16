@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cqi7p2rdh6fs2"]
 
 [ext_resource type="Texture2D" uid="uid://nmhj4hq578s5" path="res://scenes/inventory/inv_icons/slot.png" id="1_je04x"]
-[ext_resource type="Script" uid="uid://dngaxfx41804t" path="res://scenes/inventory/inv_slot.gd" id="1_raikb"]
+[ext_resource type="Script" uid="uid://dngaxfx41804t" path="res://scenes/inventory/inv_ui_slot.gd" id="1_raikb"]
 
 [node name="inv_slot" type="Panel" unique_id=1639759545]
 self_modulate = Color(1, 1, 1, 0)
@@ -26,3 +26,15 @@ layout_mode = 2
 
 [node name="icon" type="Sprite2D" parent="CenterContainer/Panel" unique_id=708639709]
 position = Vector2(2, 2)
+
+[node name="Label" type="Label" parent="CenterContainer/Panel" unique_id=309419334]
+z_index = 1
+custom_minimum_size = Vector2(30, 23)
+layout_mode = 0
+offset_left = 3.0
+offset_top = 5.0
+offset_right = 33.0
+offset_bottom = 28.0
+scale = Vector2(0.5, 0.5)
+text = "x1"
+horizontal_alignment = 2

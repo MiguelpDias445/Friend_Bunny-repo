@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://b1qv5oyhkmhp6" path="res://scenes/player/player.tscn" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://b8r8p5gxuvwuv" path="res://scenes/inventory/inv_ui.tscn" id="3_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://d2pruxw48i608" path="res://scenes/bed.tscn" id="3_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://b351xvpc3yyxm" path="res://scenes/inventory/items_scenes/gun.tscn" id="4_lbhrr"]
+[ext_resource type="PackedScene" uid="uid://bbsv0x3e1ctfi" path="res://scenes/inventory/items_scenes/isqueiro.tscn" id="5_iywne"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yqjtg"]
 size = Vector2(44, 670)
@@ -55,3 +57,16 @@ offset_left = 500.0
 offset_top = 540.0
 offset_right = -455.0
 offset_bottom = -34.0
+
+[node name="gun" parent="." unique_id=706867217 instance=ExtResource("4_lbhrr")]
+position = Vector2(465, 322)
+
+[node name="gun2" parent="." unique_id=1520663406 instance=ExtResource("4_lbhrr")]
+position = Vector2(458, 280)
+
+[node name="gun3" parent="." unique_id=554207030 instance=ExtResource("4_lbhrr")]
+position = Vector2(505, 305)
+
+[node name="isqueiro" parent="." unique_id=1527996169 instance=ExtResource("5_iywne")]
+position = Vector2(586, 326)
+scale = Vector2(0.3, 0.3)
