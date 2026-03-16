@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bbsv0x3e1ctfi"]
+
+[ext_resource type="Texture2D" uid="uid://pd7cwdn8oxtc" path="res://graphics/objects/isqueiro.png" id="1_15b0g"]
+[ext_resource type="Script" uid="uid://d0i26qg4xr2or" path="res://scenes/inventory/items_scenes/isqueiro.gd" id="1_pkcdj"]
+[ext_resource type="Resource" uid="uid://cyssrxilr7c1w" path="res://scenes/inventory/items/isqueiro.tres" id="2_of42p"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pkcdj"]
+radius = 17.029387
+
+[node name="isqueiro" type="StaticBody2D" unique_id=1527996169]
+script = ExtResource("1_pkcdj")
+item = ExtResource("2_of42p")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=421271159]
+texture = ExtResource("1_15b0g")
+
+[node name="interactable_area" type="Area2D" parent="." unique_id=1924400136]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interactable_area" unique_id=837491049]
+shape = SubResource("CircleShape2D_pkcdj")
+
+[connection signal="body_entered" from="interactable_area" to="." method="_on_interactable_area_body_entered"]
