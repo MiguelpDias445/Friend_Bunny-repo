@@ -8,14 +8,18 @@
 [ext_resource type="Texture2D" uid="uid://jseyhbsk08k0" path="res://graphics/player/frente-andando4.png" id="5_qfm1y"]
 [ext_resource type="Texture2D" uid="uid://d14h330yey8au" path="res://graphics/player/frente-andando5.png" id="6_fulsm"]
 [ext_resource type="Texture2D" uid="uid://cu3pu2mowerk7" path="res://graphics/player/frente-andando6.png" id="7_4r5pv"]
-[ext_resource type="Texture2D" uid="uid://qkv14gou2mpf" path="res://graphics/player/lado1.png" id="8_60mlk"]
+[ext_resource type="Texture2D" uid="uid://bnmucshwrv76c" path="res://graphics/player/lado-andandoesquerda1.png" id="9_3j4b4"]
 [ext_resource type="Texture2D" uid="uid://dveg7kgxkhwt7" path="res://graphics/player/costas-andando1.png" id="9_i4ail"]
-[ext_resource type="Texture2D" uid="uid://cfhkmvneue4l6" path="res://graphics/player/lado2.png" id="9_oprun"]
 [ext_resource type="Texture2D" uid="uid://3bkeo0qivet7" path="res://graphics/player/costas-andando2.png" id="10_a38lo"]
+[ext_resource type="Texture2D" uid="uid://bb58ea8ry6jn2" path="res://graphics/player/lado-andandoesquerda2.png" id="10_yj68g"]
 [ext_resource type="Texture2D" uid="uid://b6kdjvpfwka5x" path="res://graphics/player/costas-andando3.png" id="11_4ni07"]
+[ext_resource type="Texture2D" uid="uid://r7skfepc7maq" path="res://graphics/player/lado-andandoesquerda3.png" id="11_ioxgp"]
 [ext_resource type="Texture2D" uid="uid://c1261ihpx3ks8" path="res://graphics/player/costas-andando4.png" id="12_l71n6"]
+[ext_resource type="Texture2D" uid="uid://otacwrwi8ael" path="res://graphics/player/lado-andandodireita1.png" id="13_cnsyf"]
 [ext_resource type="Texture2D" uid="uid://b4tytjjiccdym" path="res://graphics/player/costas-andando5.png" id="13_ke2ow"]
+[ext_resource type="Texture2D" uid="uid://b3q2upia3ddok" path="res://graphics/player/lado-andandodireita2.png" id="14_007i1"]
 [ext_resource type="Texture2D" uid="uid://db4xstk5e8dqp" path="res://graphics/player/costas-andando6.png" id="14_ujl30"]
+[ext_resource type="Texture2D" uid="uid://batsnoefbfktb" path="res://graphics/player/lado-andandodireita3.png" id="15_6cv16"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
 size = Vector2(13, 29)
@@ -47,7 +51,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("8_60mlk")
+"texture": ExtResource("9_3j4b4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_yj68g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ioxgp")
 }],
 "loop": true,
 "name": &"left",
@@ -55,7 +65,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_oprun")
+"texture": ExtResource("13_cnsyf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_007i1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_6cv16")
 }],
 "loop": true,
 "name": &"right",
@@ -105,3 +121,4 @@ position = Vector2(-2.000001, 7)
 scale = Vector2(0.578125, 0.53125)
 sprite_frames = SubResource("SpriteFrames_31cv2")
 animation = &"right"
+frame_progress = 0.9488176
