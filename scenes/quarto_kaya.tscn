@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://j0cr2yt0t4s3" path="res://graphics/maps/TopDownHouse_FurnitureState2.png" id="1_h7yfi"]
 [ext_resource type="Texture2D" uid="uid://rnmaidw1m1fl" path="res://graphics/maps/New Piskel-1.png.png" id="2_6ormt"]
 [ext_resource type="Texture2D" uid="uid://8gijwox7form" path="res://graphics/maps/TopDownHouse_FurnitureState1.png" id="3_db6cs"]
-[ext_resource type="Texture2D" uid="uid://dgm4qfpht355m" path="res://graphics/objects/cama.png" id="3_eqgth"]
+[ext_resource type="Texture2D" uid="uid://dgm4qfpht355m" path="res://graphics/maps/cama.png" id="3_eqgth"]
 [ext_resource type="Texture2D" uid="uid://kvy1s8lag8l" path="res://graphics/maps/TopDownHouse_DoorsAndWindows.png" id="5_68jp5"]
 [ext_resource type="Texture2D" uid="uid://x3ua8r7u2pci" path="res://graphics/maps/TopDownHouse_SmallItems.png" id="6_uh3eh"]
 

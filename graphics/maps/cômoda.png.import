@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgm4qfpht355m"
-path="res://.godot/imported/cama.png-4f020e2bc989f9dd8441ff4a6a4d100c.ctex"
+uid="uid://t74yda6p5gm5"
+path="res://.godot/imported/cômoda.png-c6fd46bda9aee18830af300db3ecc567.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/objects/cama.png"
-dest_files=["res://.godot/imported/cama.png-4f020e2bc989f9dd8441ff4a6a4d100c.ctex"]
+source_file="res://graphics/maps/cômoda.png"
+dest_files=["res://.godot/imported/cômoda.png-c6fd46bda9aee18830af300db3ecc567.ctex"]
 
 [params]
 
