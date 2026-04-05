@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://d2pihdt80t28f"]
+
+[node name="quarto_pais_tilemap" type="Node2D" unique_id=661740206]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=484940254]
