@@ -1,8 +1,5 @@
 [gd_scene format=3 uid="uid://d0wbc671jpjv5"]
 
-[ext_resource type="PackedScene" uid="uid://c4sfly1plwvvk" path="res://quarto_pais.tscn" id="1_ekxnf"]
-[ext_resource type="PackedScene" uid="uid://cxod10vc6theh" path="res://sala.tscn" id="2_bqqt6"]
-
 [node name="Main_Menu" type="Node2D" unique_id=1736814380]
 
 [node name="Button_Manager" type="Control" parent="." unique_id=728015677]
@@ -18,9 +15,5 @@ offset_top = 279.0
 offset_right = 717.0
 offset_bottom = 376.0
 text = "Play"
-
-[node name="quarto_pais" parent="." unique_id=1852191799 instance=ExtResource("1_ekxnf")]
-
-[node name="sala" parent="quarto_pais" unique_id=983783084 instance=ExtResource("2_bqqt6")]
 
 [connection signal="pressed" from="Button_Manager/Play" to="." method="_on_play_pressed"]
