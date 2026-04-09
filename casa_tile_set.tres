@@ -3,14 +3,22 @@
 [ext_resource type="Texture2D" uid="uid://q2u41cetjkoo" path="res://graphics/objects/vela.png" id="1_1ct8g"]
 [ext_resource type="Texture2D" uid="uid://c78vm8sr5f380" path="res://graphics/maps/house_tileset_floor_walls.png" id="1_ng4rc"]
 [ext_resource type="Texture2D" uid="uid://bseglai2e54dm" path="res://graphics/maps/cama-pais.png" id="2_eprd4"]
+[ext_resource type="PackedScene" uid="uid://cdjq143f13lky" path="res://scenes/house/quarto_kaya.tscn" id="2_r1dmi"]
 [ext_resource type="Texture2D" uid="uid://ckrwoa8myxcb1" path="res://graphics/maps/cômoda.png" id="3_1ct8g"]
+[ext_resource type="PackedScene" uid="uid://c4sfly1plwvvk" path="res://scenes/house/quarto_pais.tscn" id="3_v8gxa"]
 [ext_resource type="Texture2D" uid="uid://emw83vpemalh" path="res://graphics/maps/lâmpada.png" id="4_idqjq"]
+[ext_resource type="PackedScene" uid="uid://cxod10vc6theh" path="res://scenes/house/sala.tscn" id="4_oycfh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_idqjq"]
 texture = ExtResource("1_1ct8g")
 0:0/size_in_atlas = Vector2i(2, 2)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-7.5540667, -10.971382, 7.01449, -10.431806, 6.691246, 17.206062, -7.965769, 16.250168)
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_jli2k"]
+scenes/1/scene = ExtResource("2_r1dmi")
+scenes/2/scene = ExtResource("3_v8gxa")
+scenes/3/scene = ExtResource("4_oycfh")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1ct8g"]
 texture = ExtResource("1_ng4rc")
@@ -149,3 +157,4 @@ sources/5 = SubResource("TileSetAtlasSource_r1dmi")
 sources/6 = SubResource("TileSetAtlasSource_v8gxa")
 sources/0 = SubResource("TileSetAtlasSource_idqjq")
 sources/3 = SubResource("TileSetAtlasSource_1ct8g")
+sources/1 = SubResource("TileSetScenesCollectionSource_jli2k")
