@@ -9,6 +9,11 @@ texture = ExtResource("1_1ct8g")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-7.5540667, -10.971382, 7.01449, -10.431806, 6.691246, 17.206062, -7.965769, 16.250168)
 
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_jli2k"]
+scenes/1/scene = ExtResource("2_r1dmi")
+scenes/2/scene = ExtResource("3_v8gxa")
+scenes/3/scene = ExtResource("4_oycfh")
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1ct8g"]
 texture = ExtResource("1_ng4rc")
 0:0/0 = 0
@@ -140,3 +145,4 @@ sources/5 = SubResource("TileSetAtlasSource_r1dmi")
 sources/6 = SubResource("TileSetAtlasSource_v8gxa")
 sources/0 = SubResource("TileSetAtlasSource_idqjq")
 sources/3 = SubResource("TileSetAtlasSource_1ct8g")
+sources/1 = SubResource("TileSetScenesCollectionSource_jli2k")

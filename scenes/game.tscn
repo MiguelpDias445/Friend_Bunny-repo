@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cdjq143f13lky" path="res://quarto_kaya.tscn" id="4_iywne"]
 [ext_resource type="PackedScene" uid="uid://b351xvpc3yyxm" path="res://scenes/inventory/items_scenes/gun.tscn" id="4_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://bbsv0x3e1ctfi" path="res://scenes/inventory/items_scenes/isqueiro.tscn" id="5_iywne"]
+[ext_resource type="PackedScene" uid="uid://cdjq143f13lky" path="res://scenes/house/quarto_kaya.tscn" id="6_p57ef"]
 
 [node name="Game" type="Node2D" unique_id=320839026]
 metadata/_edit_horizontal_guides_ = [8.0, 13.0, 660.0, 647.0]

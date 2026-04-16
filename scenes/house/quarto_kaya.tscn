@@ -3,6 +3,7 @@
 [ext_resource type="TileSet" uid="uid://bkp4ate5linhe" path="res://casa_tile_set.tres" id="1_ahhw4"]
 
 [node name="TilemapCasa" type="Node2D" unique_id=1852191799]
+position = Vector2(-3, 3)
 
 [node name="Chão" type="TileMapLayer" parent="." unique_id=1483628786]
 texture_filter = 1
