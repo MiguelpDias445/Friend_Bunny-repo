@@ -2,53 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://b1qv5oyhkmhp6" path="res://scenes/player/player.tscn" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://b8r8p5gxuvwuv" path="res://scenes/inventory/inv_ui.tscn" id="3_lbhrr"]
-[ext_resource type="PackedScene" uid="uid://d2pruxw48i608" path="res://scenes/bed.tscn" id="3_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://cdjq143f13lky" path="res://quarto_kaya.tscn" id="4_iywne"]
 [ext_resource type="PackedScene" uid="uid://b351xvpc3yyxm" path="res://scenes/inventory/items_scenes/gun.tscn" id="4_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://bbsv0x3e1ctfi" path="res://scenes/inventory/items_scenes/isqueiro.tscn" id="5_iywne"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yqjtg"]
-size = Vector2(44, 670)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lnu2h"]
-size = Vector2(1171, 34)
 
 [node name="Game" type="Node2D" unique_id=320839026]
 metadata/_edit_horizontal_guides_ = [8.0, 13.0, 660.0, 647.0]
 metadata/_edit_vertical_guides_ = [1138.0]
-
-[node name="Player" parent="." unique_id=783761871 instance=ExtResource("2_yqjtg")]
-position = Vector2(522, 337)
-scale = Vector2(0.9, 0.9)
-
-[node name="Bordes" type="Node2D" parent="." unique_id=851502898]
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Bordes" unique_id=217045628]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bordes/StaticBody2D" unique_id=438225329]
-position = Vector2(12, 325)
-shape = SubResource("RectangleShape2D_yqjtg")
-
-[node name="StaticBody2D2" type="StaticBody2D" parent="Bordes" unique_id=1814501113]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bordes/StaticBody2D2" unique_id=153104835]
-position = Vector2(1154, 328)
-shape = SubResource("RectangleShape2D_yqjtg")
-
-[node name="StaticBody2D3" type="StaticBody2D" parent="Bordes" unique_id=664125025]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bordes/StaticBody2D3" unique_id=1202872450]
-position = Vector2(584.5, -10)
-shape = SubResource("RectangleShape2D_lnu2h")
-
-[node name="StaticBody2D4" type="StaticBody2D" parent="Bordes" unique_id=1940246841]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bordes/StaticBody2D4" unique_id=1601803875]
-position = Vector2(572, 662)
-shape = SubResource("RectangleShape2D_lnu2h")
-
-[node name="Bed" parent="." unique_id=989584858 instance=ExtResource("3_lnu2h")]
-position = Vector2(536, 15)
-scale = Vector2(0.5, 0.5)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2102744115]
 
@@ -59,14 +19,25 @@ offset_right = -455.0
 offset_bottom = -34.0
 
 [node name="gun" parent="." unique_id=706867217 instance=ExtResource("4_lbhrr")]
-position = Vector2(465, 322)
+z_index = 1
+position = Vector2(649, 489)
 
 [node name="gun2" parent="." unique_id=1520663406 instance=ExtResource("4_lbhrr")]
-position = Vector2(458, 280)
+z_index = 1
+position = Vector2(642, 447)
 
 [node name="gun3" parent="." unique_id=554207030 instance=ExtResource("4_lbhrr")]
-position = Vector2(505, 305)
+z_index = 1
+position = Vector2(689, 472)
 
 [node name="isqueiro" parent="." unique_id=1527996169 instance=ExtResource("5_iywne")]
-position = Vector2(586, 326)
+z_index = 1
+position = Vector2(770, 493)
 scale = Vector2(0.3, 0.3)
+
+[node name="TilemapCasa" parent="." unique_id=1852191799 instance=ExtResource("4_iywne")]
+position = Vector2(375, 257)
+scale = Vector2(0.5, 0.5)
+
+[node name="Player" parent="." unique_id=783761871 instance=ExtResource("2_yqjtg")]
+position = Vector2(685, 538)
