@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dsjron60h2ntc"]
 
 [ext_resource type="Script" uid="uid://dbcrarkie0yv" path="res://scenes/menu/main_menu.gd" id="1_l6cm7"]
+[ext_resource type="Texture2D" uid="uid://44t187g3yf4m" path="res://settings-btn.png" id="2_3rkf3"]
 
 [node name="Main_Menu" type="Node2D" unique_id=1736814380]
 script = ExtResource("1_l6cm7")
@@ -13,10 +14,53 @@ offset_bottom = 40.0
 
 [node name="Play" type="Button" parent="Button_Manager" unique_id=1825659105]
 layout_mode = 0
-offset_left = 464.0
-offset_top = 279.0
-offset_right = 717.0
-offset_bottom = 376.0
+offset_left = 472.0
+offset_top = 333.0
+offset_right = 725.0
+offset_bottom = 387.0
 text = "Play"
+
+[node name="Button" type="Button" parent="Button_Manager" unique_id=2020706626]
+self_modulate = Color(0.78775924, 0.78775924, 0.78775924, 1)
+layout_mode = 0
+offset_left = 472.0
+offset_top = 400.0
+offset_right = 725.0
+offset_bottom = 440.0
+text = "Settings"
+
+[node name="Button3" type="Button" parent="Button_Manager" unique_id=351386738]
+self_modulate = Color(0.78775924, 0.78775924, 0.78775924, 1)
+layout_mode = 0
+offset_left = 473.0
+offset_top = 454.0
+offset_right = 726.0
+offset_bottom = 494.0
+text = "Credits"
+
+[node name="Button2" type="Button" parent="Button_Manager" unique_id=49778937]
+self_modulate = Color(0.78775924, 0.78775924, 0.78775924, 1)
+layout_mode = 0
+offset_left = 14.000001
+offset_top = 654.0
+offset_right = 252.0
+offset_bottom = 899.0
+scale = Vector2(0.2, 0.2)
+icon = ExtResource("2_3rkf3")
+
+[node name="Title" type="Control" parent="." unique_id=985027037]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Title" unique_id=375127227]
+layout_mode = 0
+offset_left = 484.0
+offset_top = 127.0
+offset_right = 588.0
+offset_bottom = 150.0
+scale = Vector2(2, 2)
+text = "Friend Bunny"
 
 [connection signal="pressed" from="Button_Manager/Play" to="." method="_on_play_pressed"]
