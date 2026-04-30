@@ -125,7 +125,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Player" type="CharacterBody2D" unique_id=783761871]
+[node name="Player" type="CharacterBody2D" unique_id=783761871 groups=["player"]]
 script = ExtResource("1_g2els")
 inv = ExtResource("2_myrg7")
 

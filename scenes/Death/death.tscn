@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://d7bydhk40v7k"]
+
+[ext_resource type="Script" uid="uid://c71t0yh1t7v41" path="res://scenes/Death/death.gd" id="1_0uihj"]
+
+[node name="Death" type="Node2D" unique_id=1809303916]
+script = ExtResource("1_0uihj")
+
+[node name="Control" type="Control" parent="." unique_id=1816732583]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Control" unique_id=543056161]
+layout_mode = 0
+offset_left = 546.0
+offset_top = 299.0
+offset_right = 620.0
+offset_bottom = 322.0
+scale = Vector2(2, 2)
+text = "You Died!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button_" type="Control" parent="." unique_id=335630539]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="Button_" unique_id=1005558755]
+layout_mode = 0
+offset_left = 600.0
+offset_top = 475.0
+offset_right = 645.0
+offset_bottom = 506.0
+text = "Back"
+
+[connection signal="pressed" from="Button_/Button" to="." method="_on_button_pressed"]
