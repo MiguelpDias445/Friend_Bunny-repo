@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8gijwox7form"
-path="res://.godot/imported/TopDownHouse_FurnitureState1.png-06351f8d2ac27166427dcf5866d2b021.ctex"
+uid="uid://bbgdmvv1kjre8"
+path="res://.godot/imported/autoria.png-011987429f9f3d75ef604039e7947f27.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/maps/TopDownHouse_FurnitureState1.png"
-dest_files=["res://.godot/imported/TopDownHouse_FurnitureState1.png-06351f8d2ac27166427dcf5866d2b021.ctex"]
+source_file="res://scenes/menu/autoria.png"
+dest_files=["res://.godot/imported/autoria.png-011987429f9f3d75ef604039e7947f27.ctex"]
 
 [params]
 

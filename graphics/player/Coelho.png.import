@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3tk6retmrf8s"
-path="res://.godot/imported/coelho.png-e933f69b97ecc4306b36cef98320470e.ctex"
+uid="uid://dtfunbda4ssv5"
+path="res://.godot/imported/Coelho.png-2840aefb19df0f9b771b56d96434fefa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/player/coelho.png"
-dest_files=["res://.godot/imported/coelho.png-e933f69b97ecc4306b36cef98320470e.ctex"]
+source_file="res://graphics/player/Coelho.png"
+dest_files=["res://.godot/imported/Coelho.png-2840aefb19df0f9b771b56d96434fefa.ctex"]
 
 [params]
 

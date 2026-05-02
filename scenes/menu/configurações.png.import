@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://x3ua8r7u2pci"
-path="res://.godot/imported/TopDownHouse_SmallItems.png-b3266759061ef915ba435c74c649dbea.ctex"
+uid="uid://bvoaex50nju1e"
+path="res://.godot/imported/configurações.png-5395534bb49fdf425bf8e750c38d6d86.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/maps/TopDownHouse_SmallItems.png"
-dest_files=["res://.godot/imported/TopDownHouse_SmallItems.png-b3266759061ef915ba435c74c649dbea.ctex"]
+source_file="res://scenes/menu/configurações.png"
+dest_files=["res://.godot/imported/configurações.png-5395534bb49fdf425bf8e750c38d6d86.ctex"]
 
 [params]
 
