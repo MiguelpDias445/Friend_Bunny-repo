@@ -6,6 +6,11 @@
 [ext_resource type="PackedScene" uid="uid://bbsv0x3e1ctfi" path="res://scenes/inventory/items_scenes/isqueiro.tscn" id="5_iywne"]
 [ext_resource type="PackedScene" uid="uid://ct8bw75xtllvl" path="res://quarto_kaya.tscn" id="5_p57ef"]
 [ext_resource type="PackedScene" uid="uid://cqo0uhgcqmftl" path="res://scenes/Enemy/bunny.tscn" id="6_p57ef"]
+[ext_resource type="PackedScene" uid="uid://b56c8qxa845vh" path="res://cama.tscn" id="7_u5sy4"]
+[ext_resource type="PackedScene" uid="uid://bxyn1fhlilrhk" path="res://guarda-roupa.tscn" id="8_gee14"]
+[ext_resource type="PackedScene" uid="uid://c0al8uef4p346" path="res://mesa.tscn" id="9_0tnpc"]
+[ext_resource type="PackedScene" uid="uid://d03yjtkjscecg" path="res://cômoda.tscn" id="10_vtaks"]
+[ext_resource type="PackedScene" uid="uid://bnt6mjmrc7klt" path="res://cadeira.tscn" id="11_dinhu"]
 
 [node name="Game" type="Node2D" unique_id=320839026]
 metadata/_edit_horizontal_guides_ = [8.0, 13.0, 660.0, 647.0]
@@ -14,10 +19,10 @@ metadata/_edit_vertical_guides_ = [1138.0]
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2102744115]
 
 [node name="Inv_UI" parent="CanvasLayer" unique_id=712771937 instance=ExtResource("3_lbhrr")]
-offset_left = 500.0
-offset_top = 540.0
-offset_right = -455.0
-offset_bottom = -34.0
+offset_left = 538.0
+offset_top = 537.0
+offset_right = -417.0
+offset_bottom = -37.0
 
 [node name="gun" parent="." unique_id=706867217 instance=ExtResource("4_lbhrr")]
 z_index = 1
@@ -38,12 +43,39 @@ scale = Vector2(0.3, 0.3)
 
 [node name="Player" parent="." unique_id=783761871 instance=ExtResource("2_yqjtg")]
 position = Vector2(685, 538)
+scale = Vector2(1.2, 1.2)
+
+[node name="Bunny" parent="." unique_id=1000079353 instance=ExtResource("6_p57ef")]
+position = Vector2(728, 394)
+scale = Vector2(0.7, 0.7)
 
 [node name="TilemapCasa" parent="." unique_id=1852191799 instance=ExtResource("5_p57ef")]
 z_index = -1
-position = Vector2(229.99998, 103.99999)
+texture_filter = 1
+position = Vector2(276.00003, 157)
+scale = Vector2(0.65, 0.65)
+
+[node name="StaticBody2D" parent="." unique_id=1666377429 instance=ExtResource("7_u5sy4")]
+texture_filter = 1
+position = Vector2(359, 297)
+scale = Vector2(0.65, 0.65)
+
+[node name="StaticBody2D2" parent="." unique_id=1288874404 instance=ExtResource("8_gee14")]
+texture_filter = 1
+position = Vector2(668, 287)
+scale = Vector2(0.65, 0.65)
+
+[node name="StaticBody2D3" parent="." unique_id=1334363987 instance=ExtResource("9_0tnpc")]
+texture_filter = 1
+position = Vector2(397.00003, 486.00003)
+scale = Vector2(0.65, 0.65)
+
+[node name="StaticBody2D4" parent="." unique_id=1731615811 instance=ExtResource("10_vtaks")]
+texture_filter = 1
+position = Vector2(402.00003, 274)
 scale = Vector2(0.7, 0.7)
 
-[node name="Bunny" parent="." unique_id=1000079353 instance=ExtResource("6_p57ef")]
-position = Vector2(602, 359)
-scale = Vector2(0.7, 0.7)
+[node name="StaticBody2D5" parent="." unique_id=1943481605 instance=ExtResource("11_dinhu")]
+texture_filter = 1
+position = Vector2(466, 502)
+scale = Vector2(0.5, 0.5)
