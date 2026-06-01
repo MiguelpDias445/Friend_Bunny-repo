@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://c0al8uef4p346" path="res://mesa.tscn" id="9_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://d03yjtkjscecg" path="res://cômoda.tscn" id="10_vtaks"]
 [ext_resource type="PackedScene" uid="uid://bnt6mjmrc7klt" path="res://cadeira.tscn" id="11_dinhu"]
+[ext_resource type="Texture2D" uid="uid://croitqvnwj86l" path="res://graphics/maps/notebook.png" id="12_dinhu"]
 
 [node name="Game" type="Node2D" unique_id=320839026]
 metadata/_edit_horizontal_guides_ = [8.0, 13.0, 660.0, 647.0]
@@ -79,3 +80,8 @@ scale = Vector2(0.7, 0.7)
 texture_filter = 1
 position = Vector2(466, 502)
 scale = Vector2(0.5, 0.5)
+
+[node name="Notebook" type="Sprite2D" parent="." unique_id=545182336]
+position = Vector2(541, 531)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("12_dinhu")
