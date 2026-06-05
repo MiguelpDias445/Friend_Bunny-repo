@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cnoi4ts4r7hbf" path="res://geladeira.tscn" id="4_lbr5l"]
 [ext_resource type="PackedScene" uid="uid://cnowvcahnhisf" path="res://pia.tscn" id="5_jipel"]
 [ext_resource type="Texture2D" uid="uid://b40glwnmg85x5" path="res://graphics/maps/tapete.png" id="6_fhu27"]
+[ext_resource type="PackedScene" uid="uid://c0al8uef4p346" path="res://mesa.tscn" id="7_lbr5l"]
 
 [node name="TilemapCasa" type="Node2D" unique_id=1852191799]
 position = Vector2(47, 384)
@@ -54,3 +55,7 @@ scale = Vector2(1.2, 1.2)
 position = Vector2(583.00006, 199)
 scale = Vector2(1.8, 1.8)
 texture = ExtResource("6_fhu27")
+
+[node name="StaticBody2D5" parent="." unique_id=1334363987 instance=ExtResource("7_lbr5l")]
+position = Vector2(-49.000004, -26)
+scale = Vector2(1.5, 1.5)
