@@ -1,9 +1,16 @@
 [gd_scene format=4 uid="uid://cxod10vc6theh"]
 
 [ext_resource type="TileSet" uid="uid://bkp4ate5linhe" path="res://casa_tile_set.tres" id="1_qkma5"]
+[ext_resource type="PackedScene" uid="uid://cslb0rac4428" path="res://sofá.tscn" id="2_fwdr4"]
+[ext_resource type="PackedScene" uid="uid://crp834cms1f8q" path="res://lâmpada.tscn" id="3_ocq2c"]
+[ext_resource type="PackedScene" uid="uid://da36m4g7qa0xb" path="res://pentagrama.tscn" id="4_libsc"]
+[ext_resource type="PackedScene" uid="uid://ebltxhtobbhl" path="res://piano.tscn" id="5_b0vhe"]
+[ext_resource type="Texture2D" uid="uid://bjpdabxsinjuh" path="res://graphics/maps/relógio.png" id="6_8ir1k"]
+[ext_resource type="Texture2D" uid="uid://dhxqv0bh4flgd" path="res://graphics/maps/quadro.png" id="7_ocq2c"]
 
 [node name="TilemapCasa" type="Node2D" unique_id=1852191799]
 position = Vector2(47, 384)
+scale = Vector2(0.65, 0.65)
 
 [node name="Chão" type="TileMapLayer" parent="." unique_id=1483628786]
 texture_filter = 1
@@ -27,3 +34,30 @@ tile_set = ExtResource("1_qkma5")
 [node name="Mobília" type="TileMapLayer" parent="." unique_id=1230639103]
 texture_filter = 1
 tile_set = ExtResource("1_qkma5")
+
+[node name="CollisionShape2D" parent="." unique_id=1431907176 instance=ExtResource("2_fwdr4")]
+position = Vector2(-513.8462, -435.3846)
+scale = Vector2(2, 2)
+
+[node name="CollisionShape2D2" parent="." unique_id=560047017 instance=ExtResource("3_ocq2c")]
+position = Vector2(-210.76923, -469.2308)
+scale = Vector2(2, 2)
+
+[node name="StaticBody2D" parent="." unique_id=1063129599 instance=ExtResource("4_libsc")]
+position = Vector2(47.692314, -89.23078)
+scale = Vector2(2, 2)
+
+[node name="StaticBody2D2" parent="." unique_id=2133603886 instance=ExtResource("5_b0vhe")]
+position = Vector2(449.2308, -266.15387)
+scale = Vector2(2, 2)
+
+[node name="Relógio" type="Sprite2D" parent="." unique_id=300834401]
+texture_filter = 1
+position = Vector2(773.8462, -361.53848)
+scale = Vector2(2, 2)
+texture = ExtResource("6_8ir1k")
+
+[node name="Quadro" type="Sprite2D" parent="." unique_id=1474766898]
+position = Vector2(523.07697, -356.9231)
+scale = Vector2(1.7, 1.7)
+texture = ExtResource("7_ocq2c")

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cslb0rac4428"]
+
+[ext_resource type="Texture2D" uid="uid://da3y1c3tw7l2g" path="res://graphics/maps/sofá.png" id="1_h6208"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gfubl"]
+size = Vector2(130, 78)
+
+[node name="CollisionShape2D" type="CollisionShape2D" unique_id=1431907176]
+
+[node name="Sofá" type="Sprite2D" parent="." unique_id=1209068246]
+texture_filter = 1
+position = Vector2(301, 156)
+texture = ExtResource("1_h6208")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=658244640]
+position = Vector2(299, 156)
+shape = SubResource("RectangleShape2D_gfubl")

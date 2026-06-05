@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c0al8uef4p346"]
+
+[ext_resource type="Texture2D" uid="uid://badgusxa5vtgc" path="res://graphics/maps/mesa.png" id="1_0rx7m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0f5q7"]
+size = Vector2(82, 114)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=1334363987]
+
+[node name="Mesa" type="Sprite2D" parent="." unique_id=1754027109]
+texture_filter = 1
+position = Vector2(220, 86)
+texture = ExtResource("1_0rx7m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1292111853]
+position = Vector2(222, 88)
+shape = SubResource("RectangleShape2D_0f5q7")

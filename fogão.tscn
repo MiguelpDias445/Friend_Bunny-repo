@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ct5obroaa8enr"]
+
+[ext_resource type="Texture2D" uid="uid://cibcnuhu6ga6s" path="res://graphics/objects/fogão.png" id="1_qfvvq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w5rrq"]
+size = Vector2(114, 134)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=388611814]
+
+[node name="Fogão" type="Sprite2D" parent="." unique_id=1817638443]
+texture_filter = 1
+position = Vector2(206, 179)
+texture = ExtResource("1_qfvvq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=789466103]
+position = Vector2(208, 179)
+shape = SubResource("RectangleShape2D_w5rrq")

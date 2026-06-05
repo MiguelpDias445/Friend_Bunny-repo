@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://crp834cms1f8q"]
+
+[ext_resource type="Texture2D" uid="uid://emw83vpemalh" path="res://graphics/maps/lâmpada.png" id="1_vuq7s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3y4md"]
+size = Vector2(58, 122)
+
+[node name="CollisionShape2D" type="CollisionShape2D" unique_id=560047017]
+
+[node name="Lâmpada" type="Sprite2D" parent="." unique_id=32120268]
+texture_filter = 1
+position = Vector2(250, 153)
+texture = ExtResource("1_vuq7s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=651915940]
+position = Vector2(248, 151)
+shape = SubResource("RectangleShape2D_3y4md")

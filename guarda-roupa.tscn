@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bxyn1fhlilrhk"]
+
+[ext_resource type="Texture2D" uid="uid://bgnpy616j7jh2" path="res://graphics/maps/guarda-roupa.png" id="1_wkhr0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yacbq"]
+size = Vector2(82, 126)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=1288874404]
+
+[node name="GuardaRoupa" type="Sprite2D" parent="." unique_id=1206979083]
+texture_filter = 1
+position = Vector2(302, 87)
+texture = ExtResource("1_wkhr0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=375096792]
+position = Vector2(300, 87)
+shape = SubResource("RectangleShape2D_yacbq")
