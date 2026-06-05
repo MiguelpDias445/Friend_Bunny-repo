@@ -1,13 +1,6 @@
 [gd_resource type="TileSet" format=3 uid="uid://bkp4ate5linhe"]
 
-[ext_resource type="Texture2D" uid="uid://q2u41cetjkoo" path="res://graphics/objects/vela.png" id="1_1ct8g"]
 [ext_resource type="Texture2D" uid="uid://c78vm8sr5f380" path="res://graphics/maps/house_tileset_floor_walls.png" id="1_ng4rc"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_idqjq"]
-texture = ExtResource("1_1ct8g")
-0:0/size_in_atlas = Vector2i(2, 2)
-0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-7.5540667, -10.971382, 7.01449, -10.431806, 6.691246, 17.206062, -7.965769, 16.250168)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1ct8g"]
 texture = ExtResource("1_ng4rc")
@@ -121,22 +114,6 @@ texture = ExtResource("1_ng4rc")
 4:2/0 = 0
 4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -5.5, -8, -5.5)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eyd4x"]
-1:0/0 = 0
-1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-45, -64, 44, -64, 42, 66, -42, 65)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r1dmi"]
-1:1/0 = 0
-1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-36, -44.5, 37.5, -43, 36.5, 39.5, -35, 40.5)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v8gxa"]
-2:0/0 = 0
-2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-28, -60, 25, -60, 22, 56, -24, 55)
-
 [resource]
 physics_layer_0/collision_layer = 1
-sources/4 = SubResource("TileSetAtlasSource_eyd4x")
-sources/5 = SubResource("TileSetAtlasSource_r1dmi")
-sources/6 = SubResource("TileSetAtlasSource_v8gxa")
-sources/0 = SubResource("TileSetAtlasSource_idqjq")
 sources/3 = SubResource("TileSetAtlasSource_1ct8g")
