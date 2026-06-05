@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dj3c68a8jl8k8" path="res://cama-pais.tscn" id="2_gvmlx"]
 [ext_resource type="PackedScene" uid="uid://bxyn1fhlilrhk" path="res://guarda-roupa.tscn" id="3_rdddp"]
 [ext_resource type="PackedScene" uid="uid://d03yjtkjscecg" path="res://cômoda.tscn" id="4_lk13o"]
+[ext_resource type="Texture2D" uid="uid://dewsmy40x1l0n" path="res://graphics/maps/prateleira.png" id="5_rdddp"]
 
 [node name="TilemapCasa" type="Node2D" unique_id=1852191799]
 
@@ -42,3 +43,9 @@ scale = Vector2(1.2, 1.2)
 [node name="StaticBody2D" parent="StaticBody2D2" unique_id=1731615811 instance=ExtResource("4_lk13o")]
 position = Vector2(-254.16664, -30.000002)
 scale = Vector2(1.2, 1.2)
+
+[node name="Prateleira" type="Sprite2D" parent="." unique_id=1656924877]
+texture_filter = 1
+position = Vector2(536.00006, 197)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("5_rdddp")

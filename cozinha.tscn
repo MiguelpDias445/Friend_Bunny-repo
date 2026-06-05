@@ -1,6 +1,11 @@
 [gd_scene format=4 uid="uid://cuhvvtpayv8rs"]
 
 [ext_resource type="TileSet" uid="uid://bkp4ate5linhe" path="res://casa_tile_set.tres" id="1_3ji85"]
+[ext_resource type="PackedScene" uid="uid://cxmamiujo24gp" path="res://armário.tscn" id="2_vm5wt"]
+[ext_resource type="PackedScene" uid="uid://ct5obroaa8enr" path="res://fogão.tscn" id="3_fhu27"]
+[ext_resource type="PackedScene" uid="uid://cnoi4ts4r7hbf" path="res://geladeira.tscn" id="4_lbr5l"]
+[ext_resource type="PackedScene" uid="uid://cnowvcahnhisf" path="res://pia.tscn" id="5_jipel"]
+[ext_resource type="Texture2D" uid="uid://b40glwnmg85x5" path="res://graphics/maps/tapete.png" id="6_fhu27"]
 
 [node name="TilemapCasa" type="Node2D" unique_id=1852191799]
 position = Vector2(47, 384)
@@ -28,3 +33,24 @@ tile_set = ExtResource("1_3ji85")
 [node name="Mobília" type="TileMapLayer" parent="." unique_id=1230639103]
 texture_filter = 1
 tile_set = ExtResource("1_3ji85")
+
+[node name="StaticBody2D" parent="." unique_id=513467588 instance=ExtResource("2_vm5wt")]
+position = Vector2(576, -292)
+scale = Vector2(1.8, 1.8)
+
+[node name="StaticBody2D2" parent="." unique_id=388611814 instance=ExtResource("3_fhu27")]
+position = Vector2(141, -325)
+scale = Vector2(1.1, 1.1)
+
+[node name="StaticBody2D3" parent="." unique_id=2064704262 instance=ExtResource("4_lbr5l")]
+position = Vector2(-230, -318)
+scale = Vector2(1.8, 1.8)
+
+[node name="StaticBody2D4" parent="." unique_id=2065818908 instance=ExtResource("5_jipel")]
+position = Vector2(253.00006, -255)
+scale = Vector2(1.2, 1.2)
+
+[node name="Tapete" type="Sprite2D" parent="." unique_id=1052907785]
+position = Vector2(583.00006, 199)
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("6_fhu27")

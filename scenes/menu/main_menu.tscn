@@ -58,7 +58,7 @@ offset_bottom = 40.0
 
 [node name="Nome" type="Sprite2D" parent="Title" unique_id=1373953366]
 texture_filter = 1
-position = Vector2(209, 156)
+position = Vector2(295, 170)
 scale = Vector2(2, 2)
 texture = ExtResource("5_hj162")
 

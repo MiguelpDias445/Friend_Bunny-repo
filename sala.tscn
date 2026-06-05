@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://da36m4g7qa0xb" path="res://pentagrama.tscn" id="4_libsc"]
 [ext_resource type="PackedScene" uid="uid://ebltxhtobbhl" path="res://piano.tscn" id="5_b0vhe"]
 [ext_resource type="Texture2D" uid="uid://bjpdabxsinjuh" path="res://graphics/maps/relógio.png" id="6_8ir1k"]
+[ext_resource type="Texture2D" uid="uid://dhxqv0bh4flgd" path="res://graphics/maps/quadro.png" id="7_ocq2c"]
 
 [node name="TilemapCasa" type="Node2D" unique_id=1852191799]
 position = Vector2(47, 384)
@@ -55,3 +56,8 @@ texture_filter = 1
 position = Vector2(773.8462, -361.53848)
 scale = Vector2(2, 2)
 texture = ExtResource("6_8ir1k")
+
+[node name="Quadro" type="Sprite2D" parent="." unique_id=1474766898]
+position = Vector2(523.07697, -356.9231)
+scale = Vector2(1.7, 1.7)
+texture = ExtResource("7_ocq2c")

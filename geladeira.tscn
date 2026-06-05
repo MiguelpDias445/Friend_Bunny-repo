@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cnoi4ts4r7hbf"]
+
+[ext_resource type="Texture2D" uid="uid://ce20uelrhhnxj" path="res://graphics/objects/geladeira.png" id="1_7v80u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ql2rk"]
+size = Vector2(66, 126)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=2064704262]
+
+[node name="Geladeira" type="Sprite2D" parent="." unique_id=866861099]
+texture_filter = 1
+position = Vector2(234, 79)
+texture = ExtResource("1_7v80u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=251852015]
+position = Vector2(232, 83)
+shape = SubResource("RectangleShape2D_ql2rk")
