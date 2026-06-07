@@ -1,0 +1,22 @@
+{
+  "giz": {
+    "nome": "Giz",
+    "descricao": "Um pedaço de giz branco. Dá para desenhar no chão."
+  },
+  "pistola": {
+    "nome": "Arma",
+    "descricao": "Meu pai nunca me deixou chegar perto dela..."
+  },
+  "isqueiro": {
+    "nome": "Isqueiro",
+    "descricao": "Faz fogo quando a gente aperta."
+  },
+  "chave": {
+    "nome": "Chave",
+    "descricao": "Uma chave de metal. Talvez ela abra o cofre."
+  },
+  "vela": {
+    "nome": "Vela",
+    "descricao": "Uma vela simples. Quando acesa, faz uma luz fraquinha."
+  }
+}
