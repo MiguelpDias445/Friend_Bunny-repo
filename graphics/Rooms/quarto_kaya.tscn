@@ -1,11 +1,11 @@
 [gd_scene format=4 uid="uid://ct8bw75xtllvl"]
 
-[ext_resource type="TileSet" uid="uid://bkp4ate5linhe" path="res://casa_tile_set.tres" id="1_ahhw4"]
-[ext_resource type="PackedScene" uid="uid://b56c8qxa845vh" path="res://cama.tscn" id="2_hkt7c"]
-[ext_resource type="PackedScene" uid="uid://bxyn1fhlilrhk" path="res://guarda-roupa.tscn" id="3_v6k7j"]
-[ext_resource type="PackedScene" uid="uid://c0al8uef4p346" path="res://mesa.tscn" id="4_5p7ks"]
-[ext_resource type="PackedScene" uid="uid://d03yjtkjscecg" path="res://cômoda.tscn" id="5_d3yhb"]
-[ext_resource type="PackedScene" uid="uid://bnt6mjmrc7klt" path="res://cadeira.tscn" id="6_n4oje"]
+[ext_resource type="TileSet" uid="uid://bkp4ate5linhe" path="res://graphics/maps/casa_tile_set.tres" id="1_ahhw4"]
+[ext_resource type="PackedScene" uid="uid://b56c8qxa845vh" path="res://graphics/objScenes/cama.tscn" id="2_hkt7c"]
+[ext_resource type="PackedScene" uid="uid://bxyn1fhlilrhk" path="res://graphics/objScenes/guarda-roupa.tscn" id="3_v6k7j"]
+[ext_resource type="PackedScene" uid="uid://c0al8uef4p346" path="res://graphics/objScenes/mesa.tscn" id="4_5p7ks"]
+[ext_resource type="PackedScene" uid="uid://d03yjtkjscecg" path="res://graphics/objScenes/cômoda.tscn" id="5_d3yhb"]
+[ext_resource type="PackedScene" uid="uid://bnt6mjmrc7klt" path="res://graphics/objScenes/cadeira.tscn" id="6_n4oje"]
 [ext_resource type="Texture2D" uid="uid://croitqvnwj86l" path="res://graphics/maps/notebook.png" id="7_18ph5"]
 
 [node name="TilemapCasa" type="Node2D" unique_id=1852191799]

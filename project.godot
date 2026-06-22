@@ -13,7 +13,10 @@ config_version=5
 config/name="friend_bunny"
 run/main_scene="uid://dsjron60h2ntc"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
+
+[autoload]
+
+Fade="*uid://bonclebr0gfyw"
 
 [display]
 

@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://bvoaex50nju1e" path="res://scenes/menu/configurações.png" id="4_xn6kt"]
 [ext_resource type="Texture2D" uid="uid://bj4bkm5ifkpm" path="res://scenes/menu/nome.png" id="5_hj162"]
 
+[sub_resource type="CanvasTexture" id="CanvasTexture_hj162"]
+
 [node name="Main_Menu" type="Node2D" unique_id=1736814380]
 script = ExtResource("1_l6cm7")
 
@@ -18,22 +20,36 @@ offset_bottom = 40.0
 [node name="Play" type="Button" parent="Button_Manager" unique_id=1825659105]
 texture_filter = 1
 layout_mode = 0
-offset_left = 494.0
-offset_top = 154.0
-offset_right = 758.0
-offset_bottom = 418.0
+offset_left = 160.0
+offset_top = 224.0
+offset_right = 424.0
+offset_bottom = 488.0
+scale = Vector2(0.8, 0.8)
 icon = ExtResource("2_kiqgm")
 flat = true
 icon_alignment = 1
 
 [node name="Button3" type="Button" parent="Button_Manager" unique_id=351386738]
-self_modulate = Color(0.78775924, 0.78775924, 0.78775924, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 494.0
-offset_top = 285.0
-offset_right = 758.0
-offset_bottom = 549.0
+offset_left = 160.0
+offset_top = 329.0
+offset_right = 424.0
+offset_bottom = 593.0
+scale = Vector2(0.8, 0.8)
+icon = ExtResource("3_hj162")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button4" type="Button" parent="Button_Manager" unique_id=1922006963]
+texture_filter = 1
+layout_mode = 0
+offset_left = 161.0
+offset_top = 429.00003
+offset_right = 425.0
+offset_bottom = 693.00006
+scale = Vector2(0.8, 0.8)
 icon = ExtResource("3_hj162")
 flat = true
 icon_alignment = 1
@@ -43,10 +59,10 @@ expand_icon = true
 self_modulate = Color(0.78775924, 0.78775924, 0.78775924, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 24.0
-offset_top = 628.0
-offset_right = 96.0
-offset_bottom = 700.0
+offset_left = 1098.0
+offset_top = 566.0
+offset_right = 1170.0
+offset_bottom = 638.0
 icon = ExtResource("4_xn6kt")
 flat = true
 
@@ -61,5 +77,12 @@ texture_filter = 1
 position = Vector2(295, 170)
 scale = Vector2(2, 2)
 texture = ExtResource("5_hj162")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=828776008]
+modulate = Color(0.3085038, 0.0217541, 0.053167887, 1)
+show_behind_parent = true
+position = Vector2(698.49994, 343.49994)
+scale = Vector2(1989.0001, 1279)
+texture = SubResource("CanvasTexture_hj162")
 
 [connection signal="pressed" from="Button_Manager/Play" to="." method="_on_play_pressed"]

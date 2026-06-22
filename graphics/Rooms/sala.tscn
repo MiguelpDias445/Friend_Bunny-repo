@@ -1,9 +1,9 @@
 [gd_scene format=4 uid="uid://cxod10vc6theh"]
 
-[ext_resource type="TileSet" uid="uid://bkp4ate5linhe" path="res://casa_tile_set.tres" id="1_qkma5"]
-[ext_resource type="PackedScene" uid="uid://cslb0rac4428" path="res://sofá.tscn" id="2_fwdr4"]
-[ext_resource type="PackedScene" uid="uid://crp834cms1f8q" path="res://lâmpada.tscn" id="3_ocq2c"]
-[ext_resource type="PackedScene" uid="uid://da36m4g7qa0xb" path="res://pentagrama.tscn" id="4_libsc"]
+[ext_resource type="TileSet" uid="uid://bkp4ate5linhe" path="res://graphics/maps/casa_tile_set.tres" id="1_qkma5"]
+[ext_resource type="PackedScene" uid="uid://cslb0rac4428" path="res://graphics/objScenes/sofá.tscn" id="2_fwdr4"]
+[ext_resource type="PackedScene" uid="uid://crp834cms1f8q" path="res://graphics/objScenes/lâmpada.tscn" id="3_ocq2c"]
+[ext_resource type="PackedScene" uid="uid://da36m4g7qa0xb" path="res://graphics/objScenes/pentagrama.tscn" id="4_libsc"]
 [ext_resource type="PackedScene" uid="uid://ebltxhtobbhl" path="res://piano.tscn" id="5_b0vhe"]
 [ext_resource type="Texture2D" uid="uid://bjpdabxsinjuh" path="res://graphics/maps/relógio.png" id="6_8ir1k"]
 [ext_resource type="Texture2D" uid="uid://dhxqv0bh4flgd" path="res://graphics/maps/quadro.png" id="7_ocq2c"]

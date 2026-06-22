@@ -3,8 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://b1qv5oyhkmhp6" path="res://scenes/player/player.tscn" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://b8r8p5gxuvwuv" path="res://scenes/inventory/inv_ui.tscn" id="3_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://bbsv0x3e1ctfi" path="res://scenes/inventory/items_scenes/generic.tscn" id="5_iywne"]
-[ext_resource type="PackedScene" uid="uid://ct8bw75xtllvl" path="res://quarto_kaya.tscn" id="5_p57ef"]
-[ext_resource type="PackedScene" uid="uid://cxod10vc6theh" path="res://sala.tscn" id="9_0tnpc"]
+[ext_resource type="PackedScene" uid="uid://ct8bw75xtllvl" path="res://graphics/Rooms/quarto_kaya.tscn" id="5_p57ef"]
+[ext_resource type="PackedScene" uid="uid://cxod10vc6theh" path="res://graphics/Rooms/sala.tscn" id="9_0tnpc"]
+[ext_resource type="Texture2D" uid="uid://c5yvshm2jp6cj" path="res://graphics/Components/ligsrc.png" id="9_kvpfn"]
+[ext_resource type="Texture2D" uid="uid://ctjtouivw3vyg" path="res://graphics/objects/chama.png" id="10_dinhu"]
+[ext_resource type="Resource" uid="uid://dl884uj17g0mt" path="res://scenes/inventory/items/vela.tres" id="10_kvuet"]
+[ext_resource type="PackedScene" uid="uid://cqo0uhgcqmftl" path="res://scenes/Enemy/bunny.tscn" id="10_vtaks"]
 [ext_resource type="Resource" uid="uid://cyjii3bwxf28i" path="res://scenes/inventory/items/gun.tres" id="11_kvpfn"]
 [ext_resource type="Texture2D" uid="uid://206bccqonpxo" path="res://graphics/objects/arma.png" id="12_kvuet"]
 [ext_resource type="Resource" uid="uid://cyssrxilr7c1w" path="res://scenes/inventory/items/isqueiro.tres" id="13_trtic"]
@@ -27,12 +31,6 @@ offset_right = -513.0
 offset_bottom = -45.0
 scale = Vector2(1.5, 1.5)
 
-[node name="Player" parent="." unique_id=783761871 instance=ExtResource("2_yqjtg")]
-modulate = Color(0.8175213, 0.8175213, 0.81752115, 1)
-texture_filter = 1
-position = Vector2(685, 538)
-scale = Vector2(1.2, 1.2)
-
 [node name="Quarto_kaya" type="Node" parent="." unique_id=1012354608]
 
 [node name="TilemapCasa" parent="Quarto_kaya" unique_id=1852191799 instance=ExtResource("5_p57ef")]
@@ -52,6 +50,8 @@ texture = SubResource("CanvasTexture_trtic")
 [node name="items" type="Node" parent="Quarto_kaya" unique_id=1815689921]
 
 [node name="gun" parent="Quarto_kaya/items" unique_id=1663156487 instance=ExtResource("5_iywne")]
+show_behind_parent = true
+z_index = -1
 position = Vector2(704, 487)
 scale = Vector2(0.5, 0.5)
 item = ExtResource("11_kvpfn")
@@ -60,6 +60,8 @@ item = ExtResource("11_kvpfn")
 texture = ExtResource("12_kvuet")
 
 [node name="gun2" parent="Quarto_kaya/items" unique_id=903647062 instance=ExtResource("5_iywne")]
+show_behind_parent = true
+z_index = -1
 position = Vector2(779, 442)
 scale = Vector2(0.5, 0.5)
 item = ExtResource("11_kvpfn")
@@ -71,6 +73,8 @@ texture = ExtResource("12_kvuet")
 metadata/_edit_use_anchors_ = true
 
 [node name="gun3" parent="Quarto_kaya/items" unique_id=1458061218 instance=ExtResource("5_iywne")]
+show_behind_parent = true
+z_index = -1
 position = Vector2(819, 503)
 scale = Vector2(0.5, 0.5)
 item = ExtResource("11_kvpfn")
@@ -82,6 +86,8 @@ texture = ExtResource("12_kvuet")
 metadata/_edit_use_anchors_ = true
 
 [node name="isqueiro" parent="Quarto_kaya/items" unique_id=1904964783 instance=ExtResource("5_iywne")]
+show_behind_parent = true
+z_index = -1
 position = Vector2(683, 439)
 scale = Vector2(0.5, 0.5)
 item = ExtResource("13_trtic")
@@ -96,10 +102,49 @@ metadata/_edit_use_anchors_ = true
 
 [node name="TilemapCasa" parent="Sala" unique_id=232894823 instance=ExtResource("9_0tnpc")]
 modulate = Color(0.3254902, 0.18039216, 0.38431373, 1)
+show_behind_parent = true
+z_index = -1
 position = Vector2(2400, 402)
-scale = Vector2(0.4, 0.4)
+scale = Vector2(0.3, 0.3)
+
+[node name="ligh" type="Node" parent="Sala" unique_id=1777066269]
+
+[node name="PointLight2D" type="PointLight2D" parent="Sala/ligh" unique_id=2023380685]
+position = Vector2(2485, 332)
+shadow_color = Color(0, 0, 0, 1)
+texture = ExtResource("9_kvpfn")
+texture_scale = 0.3
+
+[node name="items" type="Node" parent="Sala" unique_id=416493928]
+
+[node name="vela" parent="Sala/items" unique_id=2050885615 instance=ExtResource("5_iywne")]
+show_behind_parent = true
+z_index = -1
+position = Vector2(2691, 521)
+scale = Vector2(0.5, 0.5)
+item = ExtResource("10_kvuet")
+
+[node name="Sprite2D" parent="Sala/items/vela" index="0" unique_id=421271159]
+texture = ExtResource("10_dinhu")
+
+[node name="EPrompt" parent="Sala/items/vela" index="1" unique_id=708527153]
+metadata/_edit_use_anchors_ = true
+
+[node name="Bunny" parent="." unique_id=1000079353 instance=ExtResource("10_vtaks")]
+modulate = Color(0.47589085, 0.011876338, 0.035777487, 1)
+texture_filter = 1
+position = Vector2(658, 333)
+
+[node name="Bunny2" parent="." unique_id=1702170132 instance=ExtResource("10_vtaks")]
+modulate = Color(0.47589085, 0.011876338, 0.035777487, 1)
+texture_filter = 1
+position = Vector2(2583, 351)
+
+[node name="Player" parent="." unique_id=783761871 instance=ExtResource("2_yqjtg")]
+position = Vector2(2520, 464)
 
 [editable path="Quarto_kaya/items/gun"]
 [editable path="Quarto_kaya/items/gun2"]
 [editable path="Quarto_kaya/items/gun3"]
 [editable path="Quarto_kaya/items/isqueiro"]
+[editable path="Sala/items/vela"]

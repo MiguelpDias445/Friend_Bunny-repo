@@ -49,6 +49,13 @@ func animation():
 func player():
 	pass
 
+func clear_inventory():
+	for slot in inv.slots:
+		slot.item = null
+	
+	inv.update.emit()
+	selectedItem = null
+
 func collect(item):
 	print("Collect called:", item)
 	print("Inventory:", inv)

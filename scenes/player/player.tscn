@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://do7rdiucb3gpd" path="res://scenes/player/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://omik2eiqrt8b" path="res://graphics/player/frente-andando1.png" id="2_f1ej7"]
+[ext_resource type="Texture2D" uid="uid://c5yvshm2jp6cj" path="res://graphics/Components/ligsrc.png" id="2_yj68g"]
 [ext_resource type="Texture2D" uid="uid://d3hoix4l7j80r" path="res://graphics/player/frente-andando2.png" id="3_oprun"]
 [ext_resource type="Texture2D" uid="uid://e1p4vyjk4bch" path="res://graphics/player/frente-andando3.png" id="4_a8ls1"]
 [ext_resource type="Texture2D" uid="uid://jseyhbsk08k0" path="res://graphics/player/frente-andando4.png" id="5_qfm1y"]
@@ -112,7 +113,7 @@ animations = [{
 script = ExtResource("1_g2els")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=21735272]
-zoom = Vector2(2.3, 2.3)
+zoom = Vector2(2.5, 2.5)
 limit_enabled = false
 limit_left = -19
 limit_top = -13
@@ -124,6 +125,7 @@ position = Vector2(-2.5, 7.5)
 shape = SubResource("RectangleShape2D_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1665677624]
+modulate = Color(0.51718444, 0.5171845, 0.5171844, 1)
 position = Vector2(-2.000001, 7)
 scale = Vector2(0.578125, 0.53125)
 sprite_frames = SubResource("SpriteFrames_31cv2")
@@ -133,3 +135,9 @@ animation = &"down"
 position = Vector2(-10, 14)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2D" unique_id=642619957]
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=666947954]
+position = Vector2(-2.5, 7.5)
+shadow_color = Color(0, 0, 0, 1)
+texture = ExtResource("2_yj68g")
+texture_scale = 0.3

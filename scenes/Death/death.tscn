@@ -2,6 +2,10 @@
 
 [ext_resource type="Script" uid="uid://c71t0yh1t7v41" path="res://scenes/Death/death.gd" id="1_0uihj"]
 
+[sub_resource type="CanvasTexture" id="CanvasTexture_0hws0"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_0uihj"]
+
 [node name="Death" type="Node2D" unique_id=1809303916]
 script = ExtResource("1_0uihj")
 
@@ -13,12 +17,12 @@ offset_bottom = 40.0
 
 [node name="Label" type="Label" parent="Control" unique_id=543056161]
 layout_mode = 0
-offset_left = 546.0
-offset_top = 299.0
-offset_right = 620.0
-offset_bottom = 322.0
-scale = Vector2(2, 2)
-text = "You Died!"
+offset_left = 469.0
+offset_top = 284.0
+offset_right = 566.0
+offset_bottom = 307.0
+scale = Vector2(3, 3)
+text = "GAME OVER!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -30,10 +34,18 @@ offset_bottom = 40.0
 
 [node name="Button" type="Button" parent="Button_" unique_id=1005558755]
 layout_mode = 0
-offset_left = 600.0
-offset_top = 475.0
-offset_right = 645.0
-offset_bottom = 506.0
+offset_left = 473.0
+offset_top = 448.0
+offset_right = 770.0
+offset_bottom = 479.0
 text = "Back"
+icon = SubResource("CanvasTexture_0hws0")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=57351086]
+modulate = Color(0.17448907, 0.0077777826, 0.01884186, 1)
+show_behind_parent = true
+position = Vector2(698.49994, 343.49994)
+scale = Vector2(1989.0001, 1279)
+texture = SubResource("CanvasTexture_0uihj")
 
 [connection signal="pressed" from="Button_/Button" to="." method="_on_button_pressed"]
