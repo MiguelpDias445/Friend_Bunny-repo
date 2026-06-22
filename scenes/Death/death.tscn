@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://d7bydhk40v7k"]
 
 [ext_resource type="Script" uid="uid://c71t0yh1t7v41" path="res://scenes/Death/death.gd" id="1_0uihj"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_0hws0"]
+[ext_resource type="Texture2D" uid="uid://kfrmo8k47ukj" path="res://graphics/Components/morte.png" id="2_w54f6"]
+[ext_resource type="Texture2D" uid="uid://efm2bmkltt4t" path="res://graphics/Components/voltar.png" id="3_bkxv3"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_0uihj"]
 
@@ -15,16 +15,9 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Label" type="Label" parent="Control" unique_id=543056161]
-layout_mode = 0
-offset_left = 469.0
-offset_top = 284.0
-offset_right = 566.0
-offset_bottom = 307.0
-scale = Vector2(3, 3)
-text = "GAME OVER!"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="Morte" type="Sprite2D" parent="Control" unique_id=975725608]
+position = Vector2(616, 380)
+texture = ExtResource("2_w54f6")
 
 [node name="Button_" type="Control" parent="." unique_id=335630539]
 layout_mode = 3
@@ -33,13 +26,15 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Button" type="Button" parent="Button_" unique_id=1005558755]
+texture_filter = 1
 layout_mode = 0
-offset_left = 473.0
-offset_top = 448.0
-offset_right = 770.0
-offset_bottom = 479.0
-text = "Back"
-icon = SubResource("CanvasTexture_0hws0")
+offset_left = 549.0
+offset_top = 397.0
+offset_right = 685.0
+offset_bottom = 533.0
+icon = ExtResource("3_bkxv3")
+flat = true
+icon_alignment = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=57351086]
 modulate = Color(0.17448907, 0.0077777826, 0.01884186, 1)

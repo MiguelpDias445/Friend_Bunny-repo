@@ -6,5 +6,6 @@
 [resource]
 script = ExtResource("1_tylgd")
 name = "isqueiro"
+desc = "Parece perigoso"
 texture = ExtResource("2_akedg")
 metadata/_custom_type_script = "uid://ctpuxmounpmrn"

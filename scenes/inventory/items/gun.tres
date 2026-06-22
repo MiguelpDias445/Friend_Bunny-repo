@@ -6,5 +6,6 @@
 [resource]
 script = ExtResource("1_8cfc4")
 name = "gun"
+desc = "Meu pai nunca me deixou chegar perto dela..."
 texture = ExtResource("2_lfc7u")
 metadata/_custom_type_script = "uid://ctpuxmounpmrn"

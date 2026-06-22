@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvoaex50nju1e"
-path="res://.godot/imported/configurações.png-5395534bb49fdf425bf8e750c38d6d86.ctex"
+uid="uid://kfrmo8k47ukj"
+path="res://.godot/imported/morte.png-848affb4ec34bad21324ebbc26a83671.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/configurações.png"
-dest_files=["res://.godot/imported/configurações.png-5395534bb49fdf425bf8e750c38d6d86.ctex"]
+source_file="res://graphics/Components/morte.png"
+dest_files=["res://.godot/imported/morte.png-848affb4ec34bad21324ebbc26a83671.ctex"]
 
 [params]
 

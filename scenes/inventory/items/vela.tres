@@ -6,5 +6,6 @@
 [resource]
 script = ExtResource("1_h8i17")
 name = "Vela"
+desc = "Uma vela simples. Quando acesa, faz uma luz fraquinha."
 texture = ExtResource("2_dkc6v")
 metadata/_custom_type_script = "uid://ctpuxmounpmrn"

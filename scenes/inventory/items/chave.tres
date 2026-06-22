@@ -1,10 +1,11 @@
 [gd_resource type="Resource" script_class="InvItem" format=3 uid="uid://h0lcv85g3wwp"]
 
 [ext_resource type="Script" uid="uid://ctpuxmounpmrn" path="res://scenes/inventory/inventory_item.gd" id="1_rqd6b"]
-[ext_resource type="Texture2D" uid="uid://bajr38gg81cyo" path="res://graphics/keys/key.png" id="2_itufr"]
+[ext_resource type="Texture2D" uid="uid://ddh53l2kc6nwb" path="res://graphics/objects/chave.png" id="2_rqd6b"]
 
 [resource]
 script = ExtResource("1_rqd6b")
 name = "Chave"
-texture = ExtResource("2_itufr")
+desc = "Uma chave de metal. Talvez ela abra alum quarto."
+texture = ExtResource("2_rqd6b")
 metadata/_custom_type_script = "uid://ctpuxmounpmrn"

@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://dsjron60h2ntc"]
 
 [ext_resource type="Script" uid="uid://dbcrarkie0yv" path="res://scenes/menu/main_menu.gd" id="1_l6cm7"]
-[ext_resource type="Texture2D" uid="uid://b4u5e2qpppt33" path="res://scenes/menu/jogar.png" id="2_kiqgm"]
-[ext_resource type="Texture2D" uid="uid://bbgdmvv1kjre8" path="res://scenes/menu/autoria.png" id="3_hj162"]
-[ext_resource type="Texture2D" uid="uid://bvoaex50nju1e" path="res://scenes/menu/configurações.png" id="4_xn6kt"]
-[ext_resource type="Texture2D" uid="uid://bj4bkm5ifkpm" path="res://scenes/menu/nome.png" id="5_hj162"]
+[ext_resource type="Texture2D" uid="uid://b4u5e2qpppt33" path="res://graphics/Components/jogar.png" id="2_kiqgm"]
+[ext_resource type="Texture2D" uid="uid://bbgdmvv1kjre8" path="res://graphics/Components/autoria.png" id="3_hj162"]
+[ext_resource type="Texture2D" uid="uid://djy6qjy84dax0" path="res://graphics/Components/sair.png" id="4_isoef"]
+[ext_resource type="Texture2D" uid="uid://bvoaex50nju1e" path="res://graphics/Components/configurações.png" id="4_xn6kt"]
+[ext_resource type="Texture2D" uid="uid://bj4bkm5ifkpm" path="res://graphics/Components/nome.png" id="5_hj162"]
+[ext_resource type="AudioStream" uid="uid://bsxq7xu3v12av" path="res://audio/music/menu-music.ogg" id="7_isoef"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_hj162"]
 
@@ -28,8 +30,9 @@ scale = Vector2(0.8, 0.8)
 icon = ExtResource("2_kiqgm")
 flat = true
 icon_alignment = 1
+expand_icon = true
 
-[node name="Button3" type="Button" parent="Button_Manager" unique_id=351386738]
+[node name="Credits" type="Button" parent="Button_Manager" unique_id=351386738]
 texture_filter = 1
 layout_mode = 0
 offset_left = 160.0
@@ -42,7 +45,7 @@ flat = true
 icon_alignment = 1
 expand_icon = true
 
-[node name="Button4" type="Button" parent="Button_Manager" unique_id=1922006963]
+[node name="Quit" type="Button" parent="Button_Manager" unique_id=1922006963]
 texture_filter = 1
 layout_mode = 0
 offset_left = 161.0
@@ -50,12 +53,12 @@ offset_top = 429.00003
 offset_right = 425.0
 offset_bottom = 693.00006
 scale = Vector2(0.8, 0.8)
-icon = ExtResource("3_hj162")
+icon = ExtResource("4_isoef")
 flat = true
 icon_alignment = 1
 expand_icon = true
 
-[node name="Button2" type="Button" parent="Button_Manager" unique_id=49778937]
+[node name="Settings" type="Button" parent="Button_Manager" unique_id=49778937]
 self_modulate = Color(0.78775924, 0.78775924, 0.78775924, 1)
 texture_filter = 1
 layout_mode = 0
@@ -85,4 +88,9 @@ position = Vector2(698.49994, 343.49994)
 scale = Vector2(1989.0001, 1279)
 texture = SubResource("CanvasTexture_hj162")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2071509355]
+stream = ExtResource("7_isoef")
+autoplay = true
+
 [connection signal="pressed" from="Button_Manager/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Button_Manager/Quit" to="." method="_on_quit_pressed"]

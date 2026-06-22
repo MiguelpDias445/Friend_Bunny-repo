@@ -31,6 +31,9 @@ func update_slots():
 		var button = slots[i].get_node("Button")
 		
 		if inv.slots[i].item:
-			button.tooltip_text = inv.slots[i].item.name
+			if inv.slots[i].item.name == "gun":
+				button.tooltip_text = "Ammo: 0"
+			else:
+				button.tooltip_text = inv.slots[i].item.desc
 		else:
 			button.tooltip_text = ""

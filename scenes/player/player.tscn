@@ -131,10 +131,10 @@ scale = Vector2(0.578125, 0.53125)
 sprite_frames = SubResource("SpriteFrames_31cv2")
 animation = &"down"
 
-[node name="Node2D" type="Node2D" parent="." unique_id=2137561214]
+[node name="ItemHolder" type="Node2D" parent="." unique_id=2137561214]
 position = Vector2(-10, 14)
 
-[node name="Sprite2D" type="Sprite2D" parent="Node2D" unique_id=642619957]
+[node name="Sprite2D" type="Sprite2D" parent="ItemHolder" unique_id=642619957]
 
 [node name="PointLight2D" type="PointLight2D" parent="." unique_id=666947954]
 position = Vector2(-2.5, 7.5)
