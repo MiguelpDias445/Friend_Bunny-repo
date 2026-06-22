@@ -1,6 +1,12 @@
 [gd_scene format=4 uid="uid://ct8bw75xtllvl"]
 
 [ext_resource type="TileSet" uid="uid://bkp4ate5linhe" path="res://casa_tile_set.tres" id="1_ahhw4"]
+[ext_resource type="PackedScene" uid="uid://b56c8qxa845vh" path="res://cama.tscn" id="2_hkt7c"]
+[ext_resource type="PackedScene" uid="uid://bxyn1fhlilrhk" path="res://guarda-roupa.tscn" id="3_v6k7j"]
+[ext_resource type="PackedScene" uid="uid://c0al8uef4p346" path="res://mesa.tscn" id="4_5p7ks"]
+[ext_resource type="PackedScene" uid="uid://d03yjtkjscecg" path="res://cômoda.tscn" id="5_d3yhb"]
+[ext_resource type="PackedScene" uid="uid://bnt6mjmrc7klt" path="res://cadeira.tscn" id="6_n4oje"]
+[ext_resource type="Texture2D" uid="uid://croitqvnwj86l" path="res://graphics/maps/notebook.png" id="7_18ph5"]
 
 [node name="TilemapCasa" type="Node2D" unique_id=1852191799]
 
@@ -28,3 +34,27 @@ position = Vector2(-25, 16)
 scale = Vector2(3, 3.21)
 tile_map_data = PackedByteArray("AAAOAAMAAwALAAMAAAA=")
 tile_set = ExtResource("1_ahhw4")
+
+[node name="StaticBody2D" parent="." unique_id=1666377429 instance=ExtResource("2_hkt7c")]
+texture_filter = 1
+position = Vector2(132, 225)
+
+[node name="StaticBody2D2" parent="." unique_id=1288874404 instance=ExtResource("3_v6k7j")]
+texture_filter = 1
+position = Vector2(596, 204)
+
+[node name="StaticBody2D3" parent="." unique_id=1334363987 instance=ExtResource("4_5p7ks")]
+texture_filter = 1
+position = Vector2(186, 498)
+
+[node name="StaticBody2D4" parent="." unique_id=1731615811 instance=ExtResource("5_d3yhb")]
+texture_filter = 1
+position = Vector2(241, 221)
+
+[node name="StaticBody2D5" parent="." unique_id=1943481605 instance=ExtResource("6_n4oje")]
+texture_filter = 1
+position = Vector2(233, 502)
+
+[node name="Notebook" type="Sprite2D" parent="." unique_id=2057901931]
+position = Vector2(411, 567)
+texture = ExtResource("7_18ph5")

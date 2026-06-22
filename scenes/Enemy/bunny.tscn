@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cqo0uhgcqmftl"]
 
-[ext_resource type="Texture2D" uid="uid://bvwlb1r53wb8s" path="res://graphics/player/Coelho.png" id="1_0cw7i"]
+[ext_resource type="Texture2D" uid="uid://dtfunbda4ssv5" path="res://graphics/player/Coelho.png" id="1_0cw7i"]
 [ext_resource type="Script" uid="uid://us02n3mkwh10" path="res://scenes/Enemy/bunny.gd" id="1_hdr1n"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hdr1n"]

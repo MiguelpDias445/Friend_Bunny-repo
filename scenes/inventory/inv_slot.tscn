@@ -1,40 +1,124 @@
 [gd_scene format=3 uid="uid://cqi7p2rdh6fs2"]
 
-[ext_resource type="Texture2D" uid="uid://nmhj4hq578s5" path="res://scenes/inventory/inv_icons/slot.png" id="1_je04x"]
-[ext_resource type="Script" uid="uid://dngaxfx41804t" path="res://scenes/inventory/inv_ui_slot.gd" id="1_raikb"]
+[ext_resource type="Script" uid="uid://dngaxfx41804t" path="res://scenes/inv_ui_slot.gd" id="1_raikb"]
 
-[node name="inv_slot" type="Panel" unique_id=1639759545]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_raikb"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 1, 1, 0.08235294)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eckqk"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.34509805, 0.34509805, 0.34509805, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v3275"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.7490196, 0.47843137, 0.4, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_je04x"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0.49019608, 0.8862745, 1)
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+shadow_color = Color(0, 0, 0, 0)
+
+[node name="inv_slot" type="Panel" unique_id=130361103]
 self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(41, 39)
 offset_right = 41.0
 offset_bottom = 39.0
 script = ExtResource("1_raikb")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=786064546]
-position = Vector2(21.92, 20.920002)
-scale = Vector2(0.040888887, 0.039037038)
-texture = ExtResource("1_je04x")
-
-[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1639438532]
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1862090000]
 custom_minimum_size = Vector2(40, 40)
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 38.0
+offset_bottom = 38.0
 
-[node name="Panel" type="Panel" parent="CenterContainer" unique_id=1540616540]
+[node name="Panel" type="Panel" parent="CenterContainer" unique_id=484083234]
 layout_mode = 2
 
-[node name="icon" type="Sprite2D" parent="CenterContainer/Panel" unique_id=708639709]
+[node name="icon" type="Sprite2D" parent="CenterContainer/Panel" unique_id=23511477]
 position = Vector2(2, 2)
 
-[node name="Label" type="Label" parent="CenterContainer/Panel" unique_id=309419334]
+[node name="Label" type="Label" parent="CenterContainer/Panel" unique_id=1400150614]
 z_index = 1
 custom_minimum_size = Vector2(30, 23)
 layout_mode = 0
 offset_left = 3.0
-offset_top = 5.0
+offset_top = 6.0
 offset_right = 33.0
-offset_bottom = 28.0
+offset_bottom = 29.0
 scale = Vector2(0.5, 0.5)
 text = "x1"
 horizontal_alignment = 2
+
+[node name="Button" type="Button" parent="." unique_id=166748514]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 39.0
+offset_bottom = 37.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_raikb")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_eckqk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_v3275")
+theme_override_styles/focus = SubResource("StyleBoxFlat_je04x")

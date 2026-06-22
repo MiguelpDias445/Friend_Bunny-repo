@@ -3,6 +3,7 @@ extends Panel
 @onready var item_icon: Sprite2D = $CenterContainer/Panel/icon
 @onready var amount_text: Label = $CenterContainer/Panel/Label
 
+
 func update(slot: InvSlot):
 	if !slot.item:
 		item_icon.visible = false

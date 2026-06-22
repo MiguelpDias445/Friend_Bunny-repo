@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://do7rdiucb3gpd" path="res://scenes/player/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://omik2eiqrt8b" path="res://graphics/player/frente-andando1.png" id="2_f1ej7"]
-[ext_resource type="Resource" uid="uid://4tuhgnq5g88t" path="res://scenes/inventory/playerInv.tres" id="2_myrg7"]
 [ext_resource type="Texture2D" uid="uid://d3hoix4l7j80r" path="res://graphics/player/frente-andando2.png" id="3_oprun"]
 [ext_resource type="Texture2D" uid="uid://e1p4vyjk4bch" path="res://graphics/player/frente-andando3.png" id="4_a8ls1"]
 [ext_resource type="Texture2D" uid="uid://jseyhbsk08k0" path="res://graphics/player/frente-andando4.png" id="5_qfm1y"]
@@ -111,10 +110,10 @@ animations = [{
 
 [node name="Player" type="CharacterBody2D" unique_id=783761871 groups=["player"]]
 script = ExtResource("1_g2els")
-inv = ExtResource("2_myrg7")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=21735272]
-zoom = Vector2(1.5, 1.5)
+zoom = Vector2(2.3, 2.3)
+limit_enabled = false
 limit_left = -19
 limit_top = -13
 limit_right = 1138
@@ -128,4 +127,9 @@ shape = SubResource("RectangleShape2D_g2els")
 position = Vector2(-2.000001, 7)
 scale = Vector2(0.578125, 0.53125)
 sprite_frames = SubResource("SpriteFrames_31cv2")
-animation = &"right"
+animation = &"down"
+
+[node name="Node2D" type="Node2D" parent="." unique_id=2137561214]
+position = Vector2(-10, 14)
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D" unique_id=642619957]
