@@ -23,6 +23,10 @@ Fade="*uid://bonclebr0gfyw"
 window/size/viewport_width=1280
 window/size/viewport_height=720
 
+[global_group]
+
+player=""
+
 [input]
 
 right={

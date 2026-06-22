@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://c27qg75gjxx5j"]
+
+[ext_resource type="Script" uid="uid://v0yvk8rghtf5" path="res://scenes/Doors/door.gd" id="1_q08rq"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_11ovy"]
+specular_color = Color(0.12955844, 0.12955847, 0.12955844, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q08rq"]
+size = Vector2(29.5, 34)
+
+[node name="Door" type="Area2D" unique_id=850194827]
+script = ExtResource("1_q08rq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1926717306]
+modulate = Color(0.33831194, 0.029601254, 0.129637, 1)
+position = Vector2(15.5, 4.4999995)
+scale = Vector2(31, 35)
+texture = SubResource("CanvasTexture_11ovy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1251716511]
+position = Vector2(15.25, 5)
+shape = SubResource("RectangleShape2D_q08rq")
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1832150890]
+position = Vector2(-6, 0)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

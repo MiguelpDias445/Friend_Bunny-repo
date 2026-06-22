@@ -10,9 +10,14 @@
 [ext_resource type="Resource" uid="uid://dl884uj17g0mt" path="res://scenes/inventory/items/vela.tres" id="10_kvuet"]
 [ext_resource type="PackedScene" uid="uid://cqo0uhgcqmftl" path="res://scenes/Enemy/bunny.tscn" id="10_vtaks"]
 [ext_resource type="Resource" uid="uid://cyjii3bwxf28i" path="res://scenes/inventory/items/gun.tres" id="11_kvpfn"]
+[ext_resource type="Resource" uid="uid://h0lcv85g3wwp" path="res://scenes/inventory/items/chave.tres" id="12_ca42v"]
 [ext_resource type="Texture2D" uid="uid://206bccqonpxo" path="res://graphics/objects/arma.png" id="12_kvuet"]
+[ext_resource type="Texture2D" uid="uid://bajr38gg81cyo" path="res://graphics/keys/key.png" id="13_rysoc"]
 [ext_resource type="Resource" uid="uid://cyssrxilr7c1w" path="res://scenes/inventory/items/isqueiro.tres" id="13_trtic"]
 [ext_resource type="Texture2D" uid="uid://pd7cwdn8oxtc" path="res://graphics/objects/isqueiro.png" id="14_ir15t"]
+[ext_resource type="PackedScene" uid="uid://c27qg75gjxx5j" path="res://scenes/Doors/door.tscn" id="14_trtic"]
+[ext_resource type="PackedScene" uid="uid://cuhvvtpayv8rs" path="res://graphics/Rooms/cozinha.tscn" id="17_rysoc"]
+[ext_resource type="PackedScene" uid="uid://c4sfly1plwvvk" path="res://graphics/Rooms/quarto_pais.tscn" id="18_ssvqc"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_trtic"]
 specular_color = Color(0, 0, 0, 1)
@@ -43,8 +48,8 @@ scale = Vector2(0.65, 0.65)
 [node name="Sprite2D" type="Sprite2D" parent="Quarto_kaya/TilemapCasa" unique_id=1379443602]
 modulate = Color(0.056078807, 0.02035314, 0.08979108, 1)
 show_behind_parent = true
-position = Vector2(1516.9229, 138.46167)
-scale = Vector2(7135.385, 3556.923)
+position = Vector2(2111.5386, 914.6155)
+scale = Vector2(8324.616, 5109.2305)
 texture = SubResource("CanvasTexture_trtic")
 
 [node name="items" type="Node" parent="Quarto_kaya" unique_id=1815689921]
@@ -130,6 +135,19 @@ texture = ExtResource("10_dinhu")
 [node name="EPrompt" parent="Sala/items/vela" index="1" unique_id=708527153]
 metadata/_edit_use_anchors_ = true
 
+[node name="chave" parent="Sala/items" unique_id=342646849 instance=ExtResource("5_iywne")]
+show_behind_parent = true
+z_index = -1
+position = Vector2(2621, 504)
+scale = Vector2(0.5, 0.5)
+item = ExtResource("12_ca42v")
+
+[node name="Sprite2D" parent="Sala/items/chave" index="0" unique_id=421271159]
+texture = ExtResource("13_rysoc")
+
+[node name="EPrompt" parent="Sala/items/chave" index="1" unique_id=708527153]
+metadata/_edit_use_anchors_ = true
+
 [node name="Bunny" parent="." unique_id=1000079353 instance=ExtResource("10_vtaks")]
 modulate = Color(0.47589085, 0.011876338, 0.035777487, 1)
 texture_filter = 1
@@ -143,8 +161,79 @@ position = Vector2(2583, 351)
 [node name="Player" parent="." unique_id=783761871 instance=ExtResource("2_yqjtg")]
 position = Vector2(2520, 464)
 
+[node name="Doors" type="Node" parent="." unique_id=546249815]
+
+[node name="Sala_ka" parent="Doors" unique_id=850194827 instance=ExtResource("14_trtic")]
+position = Vector2(869, 560)
+
+[node name="Marker2D" parent="Doors/Sala_ka" index="2" unique_id=1832150890]
+position = Vector2(1576, -76)
+
+[node name="Ka_sala" parent="Doors" unique_id=1324000028 instance=ExtResource("14_trtic")]
+position = Vector2(2396, 478)
+
+[node name="Marker2D" parent="Doors/Ka_sala" index="2" unique_id=1832150890]
+position = Vector2(-1548, 85)
+
+[node name="Pais_sala" parent="Doors" unique_id=310500663 instance=ExtResource("14_trtic")]
+position = Vector2(1094, 1441)
+
+[node name="Marker2D" parent="Doors/Pais_sala" index="2" unique_id=1832150890]
+position = Vector2(1662, -949)
+
+[node name="Sala_pais" parent="Doors" unique_id=165424449 instance=ExtResource("14_trtic")]
+position = Vector2(2741, 532)
+
+[node name="Marker2D" parent="Doors/Sala_pais" index="2" unique_id=1832150890]
+position = Vector2(-1673, 908)
+
+[node name="Sala_cozinha" parent="Doors" unique_id=956786254 instance=ExtResource("14_trtic")]
+position = Vector2(2395, 531)
+
+[node name="Marker2D" parent="Doors/Sala_cozinha" index="2" unique_id=1832150890]
+position = Vector2(-13, 802)
+
+[node name="Cozinha_sala" parent="Doors" unique_id=1718460966 instance=ExtResource("14_trtic")]
+position = Vector2(2402, 1330)
+
+[node name="Marker2D" parent="Doors/Cozinha_sala" index="2" unique_id=1832150890]
+position = Vector2(42, -793)
+
+[node name="FX" type="Node" parent="." unique_id=567386248]
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="FX" unique_id=1138854817]
+position = Vector2(1172, 1457)
+color = Color(0, 0, 0, 1)
+energy = 0.37
+blend_mode = 2
+max_distance = 16384.0
+
+[node name="Cozinha" type="Node" parent="." unique_id=782334]
+
+[node name="TilemapCasa" parent="Cozinha" unique_id=1450535831 instance=ExtResource("17_rysoc")]
+modulate = Color(0.6542321, 0.6542321, 0.654232, 1)
+show_behind_parent = true
+z_index = -1
+position = Vector2(2001, 1248)
+scale = Vector2(0.4, 0.4)
+
+[node name="Quarto_pais" type="Node" parent="." unique_id=1446405]
+
+[node name="TilemapCasa" parent="Quarto_pais" unique_id=567001006 instance=ExtResource("18_ssvqc")]
+show_behind_parent = true
+z_index = -1
+position = Vector2(690, 1193)
+scale = Vector2(0.4, 0.4)
+
 [editable path="Quarto_kaya/items/gun"]
 [editable path="Quarto_kaya/items/gun2"]
 [editable path="Quarto_kaya/items/gun3"]
 [editable path="Quarto_kaya/items/isqueiro"]
 [editable path="Sala/items/vela"]
+[editable path="Sala/items/chave"]
+[editable path="Doors/Sala_ka"]
+[editable path="Doors/Ka_sala"]
+[editable path="Doors/Pais_sala"]
+[editable path="Doors/Sala_pais"]
+[editable path="Doors/Sala_cozinha"]
+[editable path="Doors/Cozinha_sala"]

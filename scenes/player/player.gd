@@ -23,9 +23,6 @@ func _physics_process(_delta: float) -> void:
 	animation()
 	move_and_slide()
 	
-	if is_on_floor():
-		print('Está no chão')
-	
 func animation():
 	var sprite = $AnimatedSprite2D
 

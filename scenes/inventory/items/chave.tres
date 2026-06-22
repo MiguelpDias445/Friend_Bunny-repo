@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InvItem" format=3 uid="uid://h0lcv85g3wwp"]
+
+[ext_resource type="Script" uid="uid://ctpuxmounpmrn" path="res://scenes/inventory/inventory_item.gd" id="1_rqd6b"]
+[ext_resource type="Texture2D" uid="uid://bajr38gg81cyo" path="res://graphics/keys/key.png" id="2_itufr"]
+
+[resource]
+script = ExtResource("1_rqd6b")
+name = "Chave"
+texture = ExtResource("2_itufr")
+metadata/_custom_type_script = "uid://ctpuxmounpmrn"
