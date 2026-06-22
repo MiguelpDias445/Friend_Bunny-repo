@@ -22,6 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://db4xstk5e8dqp" path="res://graphics/player/costas-andando6.png" id="14_ujl30"]
 [ext_resource type="Texture2D" uid="uid://bfi1dihs1my88" path="res://graphics/player/lado-correndo5.png" id="15_cnsyf"]
 [ext_resource type="Texture2D" uid="uid://cfhkmvneue4l6" path="res://graphics/player/lado2.png" id="16_007i1"]
+[ext_resource type="AudioStream" uid="uid://b8g4ilxgrjee" path="res://audio/effects/footsteps/footsteps.wav" id="23_ioxgp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
 size = Vector2(13, 29)
@@ -141,3 +142,7 @@ position = Vector2(-2.5, 7.5)
 shadow_color = Color(0, 0, 0, 1)
 texture = ExtResource("2_yj68g")
 texture_scale = 0.3
+
+[node name="footsteps" type="AudioStreamPlayer" parent="." unique_id=343086512]
+stream = ExtResource("23_ioxgp")
+pitch_scale = 0.8

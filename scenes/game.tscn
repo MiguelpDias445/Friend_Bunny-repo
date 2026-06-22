@@ -154,11 +154,13 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Bunny" parent="." unique_id=1000079353 instance=ExtResource("10_vtaks")]
 modulate = Color(0.47589085, 0.011876338, 0.035777487, 1)
+z_index = 1
 texture_filter = 1
 position = Vector2(658, 333)
 
 [node name="Bunny2" parent="." unique_id=1702170132 instance=ExtResource("10_vtaks")]
 modulate = Color(0.47589085, 0.011876338, 0.035777487, 1)
+z_index = 1
 texture_filter = 1
 position = Vector2(2583, 351)
 

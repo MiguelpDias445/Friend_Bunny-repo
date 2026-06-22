@@ -8,11 +8,14 @@ var selectedItem
 
 @onready var item_holder = $ItemHolder
 
+func _ready():
+	print($footsteps.stream)
+
 func change_selected_item(item: InvItem):
 	selectedItem = item
 
 	if item:
-		item_holder.get_node("Sprite2D").texture = item.texure
+		item_holder.get_node("Sprite2D").texture = item.texture
 		item_holder.get_node("Sprite2D").visible = true
 	else:
 		item_holder.get_node("Sprite2D").visible = false
@@ -20,6 +23,11 @@ func change_selected_item(item: InvItem):
 func _physics_process(_delta: float) -> void:
 	direction = Input.get_vector('left', 'right', 'up', 'down')
 	velocity = direction * speed 
+	if direction != Vector2.ZERO:
+		if !$footsteps.playing:
+			$footsteps.play()
+	else:
+		$footsteps.stop()
 	animation()
 	move_and_slide()
 	
