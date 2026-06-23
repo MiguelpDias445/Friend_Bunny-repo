@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bbsv0x3e1ctfi"]
+
+[ext_resource type="Script" uid="uid://dotd32igypi7" path="res://scenes/inventory/items_scenes/generic.gd" id="1_j5nwf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pkcdj"]
+radius = 17.029387
+
+[node name="isqueiro" type="Area2D" unique_id=1663156487]
+script = ExtResource("1_j5nwf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=421271159]
+
+[node name="EPrompt" type="Label" parent="." unique_id=708527153]
+offset_left = 10.999996
+offset_top = 4.000004
+offset_right = 20.999996
+offset_bottom = 27.000004
+text = "E"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=837491049]
+shape = SubResource("CircleShape2D_pkcdj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

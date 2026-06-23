@@ -2,16 +2,30 @@
 
 [ext_resource type="PackedScene" uid="uid://b1qv5oyhkmhp6" path="res://scenes/player/player.tscn" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://b8r8p5gxuvwuv" path="res://scenes/inventory/inv_ui.tscn" id="3_lbhrr"]
-[ext_resource type="PackedScene" uid="uid://b351xvpc3yyxm" path="res://scenes/inventory/items_scenes/gun.tscn" id="4_lbhrr"]
-[ext_resource type="PackedScene" uid="uid://bbsv0x3e1ctfi" path="res://scenes/inventory/items_scenes/isqueiro.tscn" id="5_iywne"]
-[ext_resource type="PackedScene" uid="uid://ct8bw75xtllvl" path="res://quarto_kaya.tscn" id="5_p57ef"]
-[ext_resource type="PackedScene" uid="uid://cqo0uhgcqmftl" path="res://scenes/Enemy/bunny.tscn" id="6_p57ef"]
-[ext_resource type="PackedScene" uid="uid://b56c8qxa845vh" path="res://cama.tscn" id="7_u5sy4"]
-[ext_resource type="PackedScene" uid="uid://bxyn1fhlilrhk" path="res://guarda-roupa.tscn" id="8_gee14"]
-[ext_resource type="PackedScene" uid="uid://c0al8uef4p346" path="res://mesa.tscn" id="9_0tnpc"]
-[ext_resource type="PackedScene" uid="uid://d03yjtkjscecg" path="res://cômoda.tscn" id="10_vtaks"]
-[ext_resource type="PackedScene" uid="uid://bnt6mjmrc7klt" path="res://cadeira.tscn" id="11_dinhu"]
-[ext_resource type="Texture2D" uid="uid://croitqvnwj86l" path="res://graphics/maps/notebook.png" id="12_dinhu"]
+[ext_resource type="PackedScene" uid="uid://bbsv0x3e1ctfi" path="res://scenes/inventory/items_scenes/generic.tscn" id="5_iywne"]
+[ext_resource type="PackedScene" uid="uid://ct8bw75xtllvl" path="res://graphics/Rooms/quarto_kaya.tscn" id="5_p57ef"]
+[ext_resource type="PackedScene" uid="uid://cxod10vc6theh" path="res://graphics/Rooms/sala.tscn" id="9_0tnpc"]
+[ext_resource type="Texture2D" uid="uid://c5yvshm2jp6cj" path="res://graphics/Components/ligsrc.png" id="9_kvpfn"]
+[ext_resource type="Texture2D" uid="uid://ctjtouivw3vyg" path="res://graphics/objects/chama.png" id="10_dinhu"]
+[ext_resource type="Resource" uid="uid://dl884uj17g0mt" path="res://scenes/inventory/items/vela.tres" id="10_kvuet"]
+[ext_resource type="PackedScene" uid="uid://cqo0uhgcqmftl" path="res://scenes/Enemy/bunny.tscn" id="10_vtaks"]
+[ext_resource type="Resource" uid="uid://cyjii3bwxf28i" path="res://scenes/inventory/items/gun.tres" id="11_kvpfn"]
+[ext_resource type="Resource" uid="uid://h0lcv85g3wwp" path="res://scenes/inventory/items/chave.tres" id="12_ca42v"]
+[ext_resource type="Texture2D" uid="uid://206bccqonpxo" path="res://graphics/objects/arma.png" id="12_kvuet"]
+[ext_resource type="Texture2D" uid="uid://ddh53l2kc6nwb" path="res://graphics/objects/chave.png" id="13_ssvqc"]
+[ext_resource type="Resource" uid="uid://cyssrxilr7c1w" path="res://scenes/inventory/items/isqueiro.tres" id="13_trtic"]
+[ext_resource type="Texture2D" uid="uid://pd7cwdn8oxtc" path="res://graphics/objects/isqueiro.png" id="14_ir15t"]
+[ext_resource type="PackedScene" uid="uid://c27qg75gjxx5j" path="res://scenes/Doors/door.tscn" id="14_trtic"]
+[ext_resource type="PackedScene" uid="uid://cuhvvtpayv8rs" path="res://graphics/Rooms/cozinha.tscn" id="17_rysoc"]
+[ext_resource type="Resource" uid="uid://ct2gprexy0boi" path="res://scenes/inventory/items/ammo.tres" id="18_37s47"]
+[ext_resource type="PackedScene" uid="uid://c4sfly1plwvvk" path="res://graphics/Rooms/quarto_pais.tscn" id="18_ssvqc"]
+[ext_resource type="Resource" uid="uid://bn3ae00fwpla4" path="res://scenes/inventory/items/giz.tres" id="19_1kice"]
+[ext_resource type="Texture2D" uid="uid://dyejy3r3xesmj" path="res://graphics/objects/bala.png" id="19_bt5mj"]
+[ext_resource type="Texture2D" uid="uid://c0xerpfd4cg15" path="res://graphics/objects/giz.png" id="20_5newe"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_trtic"]
+specular_color = Color(0, 0, 0, 1)
+specular_shininess = 0.0
 
 [node name="Game" type="Node2D" unique_id=320839026]
 metadata/_edit_horizontal_guides_ = [8.0, 13.0, 660.0, 647.0]
@@ -20,68 +34,242 @@ metadata/_edit_vertical_guides_ = [1138.0]
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2102744115]
 
 [node name="Inv_UI" parent="CanvasLayer" unique_id=712771937 instance=ExtResource("3_lbhrr")]
-offset_left = 538.0
-offset_top = 537.0
-offset_right = -417.0
-offset_bottom = -37.0
+offset_left = 442.0
+offset_top = 529.0
+offset_right = -513.0
+offset_bottom = -45.0
+scale = Vector2(1.5, 1.5)
 
-[node name="gun" parent="." unique_id=706867217 instance=ExtResource("4_lbhrr")]
-z_index = 1
-position = Vector2(649, 489)
+[node name="Quarto_kaya" type="Node" parent="." unique_id=1012354608]
 
-[node name="gun2" parent="." unique_id=1520663406 instance=ExtResource("4_lbhrr")]
-z_index = 1
-position = Vector2(642, 447)
-
-[node name="gun3" parent="." unique_id=554207030 instance=ExtResource("4_lbhrr")]
-z_index = 1
-position = Vector2(689, 472)
-
-[node name="isqueiro" parent="." unique_id=1527996169 instance=ExtResource("5_iywne")]
-z_index = 1
-position = Vector2(770, 493)
-scale = Vector2(0.3, 0.3)
-
-[node name="Player" parent="." unique_id=783761871 instance=ExtResource("2_yqjtg")]
-position = Vector2(685, 538)
-scale = Vector2(1.2, 1.2)
-
-[node name="Bunny" parent="." unique_id=1000079353 instance=ExtResource("6_p57ef")]
-position = Vector2(728, 394)
-scale = Vector2(0.7, 0.7)
-
-[node name="TilemapCasa" parent="." unique_id=1852191799 instance=ExtResource("5_p57ef")]
+[node name="TilemapCasa" parent="Quarto_kaya" unique_id=1852191799 instance=ExtResource("5_p57ef")]
+modulate = Color(0.5688679, 0.3963737, 0.6342223, 1)
 z_index = -1
 texture_filter = 1
 position = Vector2(276.00003, 157)
 scale = Vector2(0.65, 0.65)
 
-[node name="StaticBody2D" parent="." unique_id=1666377429 instance=ExtResource("7_u5sy4")]
-texture_filter = 1
-position = Vector2(359, 297)
-scale = Vector2(0.65, 0.65)
+[node name="Sprite2D" type="Sprite2D" parent="Quarto_kaya/TilemapCasa" unique_id=1379443602]
+modulate = Color(0.056078807, 0.02035314, 0.08979108, 1)
+show_behind_parent = true
+position = Vector2(2111.5386, 914.6155)
+scale = Vector2(8324.616, 5109.2305)
+texture = SubResource("CanvasTexture_trtic")
 
-[node name="StaticBody2D2" parent="." unique_id=1288874404 instance=ExtResource("8_gee14")]
-texture_filter = 1
-position = Vector2(668, 287)
-scale = Vector2(0.65, 0.65)
+[node name="items" type="Node" parent="Quarto_kaya" unique_id=1815689921]
 
-[node name="StaticBody2D3" parent="." unique_id=1334363987 instance=ExtResource("9_0tnpc")]
-texture_filter = 1
-position = Vector2(397.00003, 486.00003)
-scale = Vector2(0.65, 0.65)
+[node name="gun" parent="Quarto_kaya/items" unique_id=1663156487 instance=ExtResource("5_iywne")]
+show_behind_parent = true
+z_index = -1
+position = Vector2(704, 487)
+scale = Vector2(0.5, 0.5)
+item = ExtResource("11_kvpfn")
 
-[node name="StaticBody2D4" parent="." unique_id=1731615811 instance=ExtResource("10_vtaks")]
+[node name="Sprite2D" parent="Quarto_kaya/items/gun" index="0" unique_id=421271159]
+texture = ExtResource("12_kvuet")
+
+[node name="gun2" parent="Quarto_kaya/items" unique_id=903647062 instance=ExtResource("5_iywne")]
+show_behind_parent = true
+z_index = -1
+position = Vector2(779, 442)
+scale = Vector2(0.5, 0.5)
+item = ExtResource("11_kvpfn")
+
+[node name="Sprite2D" parent="Quarto_kaya/items/gun2" index="0" unique_id=421271159]
+texture = ExtResource("12_kvuet")
+
+[node name="EPrompt" parent="Quarto_kaya/items/gun2" index="1" unique_id=708527153]
+metadata/_edit_use_anchors_ = true
+
+[node name="gun3" parent="Quarto_kaya/items" unique_id=1458061218 instance=ExtResource("5_iywne")]
+show_behind_parent = true
+z_index = -1
+position = Vector2(819, 503)
+scale = Vector2(0.5, 0.5)
+item = ExtResource("11_kvpfn")
+
+[node name="Sprite2D" parent="Quarto_kaya/items/gun3" index="0" unique_id=421271159]
+texture = ExtResource("12_kvuet")
+
+[node name="EPrompt" parent="Quarto_kaya/items/gun3" index="1" unique_id=708527153]
+metadata/_edit_use_anchors_ = true
+
+[node name="isqueiro" parent="Quarto_kaya/items" unique_id=1904964783 instance=ExtResource("5_iywne")]
+show_behind_parent = true
+z_index = -1
+position = Vector2(683, 439)
+scale = Vector2(0.5, 0.5)
+item = ExtResource("13_trtic")
+
+[node name="Sprite2D" parent="Quarto_kaya/items/isqueiro" index="0" unique_id=421271159]
+texture = ExtResource("14_ir15t")
+
+[node name="EPrompt" parent="Quarto_kaya/items/isqueiro" index="1" unique_id=708527153]
+metadata/_edit_use_anchors_ = true
+
+[node name="Sala" type="Node" parent="." unique_id=1320656391]
+
+[node name="TilemapCasa" parent="Sala" unique_id=232894823 instance=ExtResource("9_0tnpc")]
+modulate = Color(0.3254902, 0.18039216, 0.38431373, 1)
+show_behind_parent = true
+z_index = -1
+position = Vector2(2400, 402)
+scale = Vector2(0.3, 0.3)
+
+[node name="ligh" type="Node" parent="Sala" unique_id=1777066269]
+
+[node name="PointLight2D" type="PointLight2D" parent="Sala/ligh" unique_id=2023380685]
+position = Vector2(2485, 332)
+shadow_color = Color(0, 0, 0, 1)
+texture = ExtResource("9_kvpfn")
+texture_scale = 0.3
+
+[node name="items" type="Node" parent="Sala" unique_id=416493928]
+
+[node name="vela" parent="Sala/items" unique_id=2050885615 instance=ExtResource("5_iywne")]
+show_behind_parent = true
+z_index = -1
+position = Vector2(2691, 521)
+scale = Vector2(0.5, 0.5)
+item = ExtResource("10_kvuet")
+
+[node name="Sprite2D" parent="Sala/items/vela" index="0" unique_id=421271159]
+texture = ExtResource("10_dinhu")
+
+[node name="EPrompt" parent="Sala/items/vela" index="1" unique_id=708527153]
+metadata/_edit_use_anchors_ = true
+
+[node name="chave" parent="Sala/items" unique_id=342646849 instance=ExtResource("5_iywne")]
+show_behind_parent = true
+z_index = -1
+position = Vector2(2621, 504)
+scale = Vector2(0.5, 0.5)
+item = ExtResource("12_ca42v")
+
+[node name="Sprite2D" parent="Sala/items/chave" index="0" unique_id=421271159]
+texture = ExtResource("13_ssvqc")
+
+[node name="EPrompt" parent="Sala/items/chave" index="1" unique_id=708527153]
+metadata/_edit_use_anchors_ = true
+
+[node name="Bunny" parent="." unique_id=1000079353 instance=ExtResource("10_vtaks")]
+modulate = Color(0.47589085, 0.011876338, 0.035777487, 1)
+z_index = 1
 texture_filter = 1
-position = Vector2(402.00003, 274)
+position = Vector2(658, 333)
+
+[node name="Bunny2" parent="." unique_id=1702170132 instance=ExtResource("10_vtaks")]
+modulate = Color(0.47589085, 0.011876338, 0.035777487, 1)
+z_index = 1
+texture_filter = 1
+position = Vector2(2583, 351)
+
+[node name="Player" parent="." unique_id=783761871 instance=ExtResource("2_yqjtg")]
+position = Vector2(2520, 464)
+
+[node name="Doors" type="Node" parent="." unique_id=546249815]
+
+[node name="Sala_ka" parent="Doors" unique_id=850194827 instance=ExtResource("14_trtic")]
+position = Vector2(869, 560)
+
+[node name="Marker2D" parent="Doors/Sala_ka" index="2" unique_id=1832150890]
+position = Vector2(1576, -76)
+
+[node name="Ka_sala" parent="Doors" unique_id=1324000028 instance=ExtResource("14_trtic")]
+position = Vector2(2396, 478)
+
+[node name="Marker2D" parent="Doors/Ka_sala" index="2" unique_id=1832150890]
+position = Vector2(-1548, 85)
+
+[node name="Pais_sala" parent="Doors" unique_id=310500663 instance=ExtResource("14_trtic")]
+position = Vector2(1094, 1441)
+
+[node name="Marker2D" parent="Doors/Pais_sala" index="2" unique_id=1832150890]
+position = Vector2(1662, -949)
+
+[node name="Sala_pais" parent="Doors" unique_id=165424449 instance=ExtResource("14_trtic")]
+position = Vector2(2741, 532)
+
+[node name="Marker2D" parent="Doors/Sala_pais" index="2" unique_id=1832150890]
+position = Vector2(-1633, 860)
+
+[node name="Sala_cozinha" parent="Doors" unique_id=956786254 instance=ExtResource("14_trtic")]
+position = Vector2(2395, 531)
+
+[node name="Marker2D" parent="Doors/Sala_cozinha" index="2" unique_id=1832150890]
+position = Vector2(-13, 802)
+
+[node name="Cozinha_sala" parent="Doors" unique_id=1718460966 instance=ExtResource("14_trtic")]
+position = Vector2(2402, 1330)
+
+[node name="Marker2D" parent="Doors/Cozinha_sala" index="2" unique_id=1832150890]
+position = Vector2(42, -793)
+
+[node name="FX" type="Node" parent="." unique_id=567386248]
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="FX" unique_id=1138854817]
+position = Vector2(1746, 713)
+color = Color(0, 0, 0, 1)
+energy = 0.37
+blend_mode = 2
+max_distance = 16384.0
+
+[node name="Cozinha" type="Node" parent="." unique_id=782334]
+
+[node name="TilemapCasa" parent="Cozinha" unique_id=1450535831 instance=ExtResource("17_rysoc")]
+modulate = Color(0.6542321, 0.6542321, 0.654232, 1)
+show_behind_parent = true
+z_index = -1
+position = Vector2(2001, 1248)
+scale = Vector2(0.4, 0.4)
+
+[node name="items" type="Node" parent="Cozinha" unique_id=68771630]
+
+[node name="ammo" parent="Cozinha/items" unique_id=2018179424 instance=ExtResource("5_iywne")]
+position = Vector2(2339, 1298)
+scale = Vector2(0.5, 0.5)
+item = ExtResource("18_37s47")
+
+[node name="Sprite2D" parent="Cozinha/items/ammo" index="0" unique_id=421271159]
+texture = ExtResource("19_bt5mj")
+
+[node name="Quarto_pais" type="Node" parent="." unique_id=1446405]
+
+[node name="TilemapCasa" parent="Quarto_pais" unique_id=567001006 instance=ExtResource("18_ssvqc")]
+show_behind_parent = true
+z_index = -1
+position = Vector2(908, 1182)
+scale = Vector2(0.4, 0.4)
+
+[node name="items" type="Node" parent="Quarto_pais" unique_id=1566910739]
+
+[node name="giz" parent="Quarto_pais/items" unique_id=1092142340 instance=ExtResource("5_iywne")]
+position = Vector2(1263, 1405)
+scale = Vector2(0.7, 0.7)
+item = ExtResource("19_1kice")
+
+[node name="Sprite2D" parent="Quarto_pais/items/giz" index="0" unique_id=421271159]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("20_5newe")
+
+[node name="EPrompt" parent="Quarto_pais/items/giz" index="1" unique_id=708527153]
+scale = Vector2(0.7, 0.7)
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" parent="Quarto_pais/items/giz" index="2" unique_id=837491049]
 scale = Vector2(0.7, 0.7)
 
-[node name="StaticBody2D5" parent="." unique_id=1943481605 instance=ExtResource("11_dinhu")]
-texture_filter = 1
-position = Vector2(466, 502)
-scale = Vector2(0.5, 0.5)
-
-[node name="Notebook" type="Sprite2D" parent="." unique_id=545182336]
-position = Vector2(541, 531)
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("12_dinhu")
+[editable path="Quarto_kaya/items/gun"]
+[editable path="Quarto_kaya/items/gun2"]
+[editable path="Quarto_kaya/items/gun3"]
+[editable path="Quarto_kaya/items/isqueiro"]
+[editable path="Sala/items/vela"]
+[editable path="Sala/items/chave"]
+[editable path="Doors/Sala_ka"]
+[editable path="Doors/Ka_sala"]
+[editable path="Doors/Pais_sala"]
+[editable path="Doors/Sala_pais"]
+[editable path="Doors/Sala_cozinha"]
+[editable path="Doors/Cozinha_sala"]
+[editable path="Cozinha/items/ammo"]
+[editable path="Quarto_pais/items/giz"]

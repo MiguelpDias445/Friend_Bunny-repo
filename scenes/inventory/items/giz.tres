@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InvItem" format=3 uid="uid://bn3ae00fwpla4"]
+
+[ext_resource type="Script" uid="uid://ctpuxmounpmrn" path="res://scenes/inventory/inventory_item.gd" id="1_51758"]
+[ext_resource type="Texture2D" uid="uid://c0xerpfd4cg15" path="res://graphics/objects/giz.png" id="2_muuk4"]
+
+[resource]
+script = ExtResource("1_51758")
+name = "Giz"
+desc = "Um pedaço de giz branco. Dá para desenhar no chão."
+texture = ExtResource("2_muuk4")
+metadata/_custom_type_script = "uid://ctpuxmounpmrn"

@@ -14,7 +14,7 @@ func _ready() -> void:
 	random.randomize()
 
 func _physics_process(delta: float) -> void:
-	if target and position.distance_squared_to(target.position) < 10000: # 100^2
+	if target and position.distance_squared_to(target.position) < 40000:
 		direction = (target.position - position).normalized()
 	else:
 		wander_timer -= delta
@@ -61,10 +61,15 @@ func animation():
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
+
+		body.clear_inventory()
+
 		velocity = Vector2.ZERO
 		move_and_slide()
 
 		set_physics_process(false)
 
+		Fade.transition()
 		await get_tree().create_timer(0.1).timeout
 		get_tree().change_scene_to_file("res://scenes/Death/death.tscn")
+		await Fade.on_transition_finished

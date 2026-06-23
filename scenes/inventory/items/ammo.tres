@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InvItem" format=3 uid="uid://ct2gprexy0boi"]
+
+[ext_resource type="Script" uid="uid://ctpuxmounpmrn" path="res://scenes/inventory/inventory_item.gd" id="1_ocrq8"]
+[ext_resource type="Texture2D" uid="uid://dyejy3r3xesmj" path="res://graphics/objects/bala.png" id="2_4bbd1"]
+
+[resource]
+script = ExtResource("1_ocrq8")
+name = "Ammo"
+texture = ExtResource("2_4bbd1")
+metadata/_custom_type_script = "uid://ctpuxmounpmrn"

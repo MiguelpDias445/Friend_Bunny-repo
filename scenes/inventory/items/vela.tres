@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InvItem" format=3 uid="uid://dl884uj17g0mt"]
+
+[ext_resource type="Script" uid="uid://ctpuxmounpmrn" path="res://scenes/inventory/inventory_item.gd" id="1_h8i17"]
+[ext_resource type="Texture2D" uid="uid://ctjtouivw3vyg" path="res://graphics/objects/chama.png" id="2_dkc6v"]
+
+[resource]
+script = ExtResource("1_h8i17")
+name = "Vela"
+desc = "Uma vela simples. Quando acesa, faz uma luz fraquinha."
+texture = ExtResource("2_dkc6v")
+metadata/_custom_type_script = "uid://ctpuxmounpmrn"
