@@ -32,7 +32,7 @@ tile_set = ExtResource("1_ahhw4")
 texture_filter = 1
 position = Vector2(-25, 16)
 scale = Vector2(3, 3.21)
-tile_map_data = PackedByteArray("AAAOAAMAAwALAAMAAAA=")
+tile_map_data = PackedByteArray("AAAOAAMAAwALAAMAAAATAAsAAwAEAAUAAAA=")
 tile_set = ExtResource("1_ahhw4")
 
 [node name="StaticBody2D" parent="." unique_id=1666377429 instance=ExtResource("2_hkt7c")]

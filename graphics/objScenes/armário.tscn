@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cknt5olo1tqti" path="res://graphics/objects/armário.png" id="1_j58ce"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f3wlw"]
-size = Vector2(74, 130)
+size = Vector2(74, 96)
 
 [node name="StaticBody2D" type="StaticBody2D" unique_id=513467588]
 
@@ -13,5 +13,5 @@ position = Vector2(250, 64)
 texture = ExtResource("1_j58ce")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1365942703]
-position = Vector2(248, 66)
+position = Vector2(248, 49)
 shape = SubResource("RectangleShape2D_f3wlw")

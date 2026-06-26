@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://ckrwoa8myxcb1" path="res://graphics/maps/cômoda.png" id="1_ivcn4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_52kah"]
-size = Vector2(40, 46)
+size = Vector2(40, 29)
 
 [node name="StaticBody2D" type="StaticBody2D" unique_id=1731615811]
 
@@ -13,5 +13,5 @@ position = Vector2(271, 120)
 texture = ExtResource("1_ivcn4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1430383108]
-position = Vector2(271, 119)
+position = Vector2(271, 110.5)
 shape = SubResource("RectangleShape2D_52kah")

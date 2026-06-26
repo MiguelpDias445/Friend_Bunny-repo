@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dq7ehesk500q6" path="res://graphics/maps/cadeira.png" id="1_bgosg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mc6iq"]
-size = Vector2(58, 82)
+size = Vector2(58, 63)
 
 [node name="StaticBody2D" type="StaticBody2D" unique_id=1943481605]
 
@@ -13,5 +13,5 @@ position = Vector2(235, 92)
 texture = ExtResource("1_bgosg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=758057377]
-position = Vector2(237, 82)
+position = Vector2(237, 72.5)
 shape = SubResource("RectangleShape2D_mc6iq")

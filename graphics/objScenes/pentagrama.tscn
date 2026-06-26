@@ -2,16 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://55l3ggaqeff1" path="res://graphics/maps/pentagrama.png" id="1_615w1"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_dd1n3"]
-radius = 60.00833
-
 [node name="StaticBody2D" type="StaticBody2D" unique_id=1063129599]
 
 [node name="Pentagrama" type="Sprite2D" parent="." unique_id=1255607497]
 texture_filter = 1
 position = Vector2(290, 139)
 texture = ExtResource("1_615w1")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1796912716]
-position = Vector2(290, 138)
-shape = SubResource("CircleShape2D_dd1n3")

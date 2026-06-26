@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dgm4qfpht355m" path="res://graphics/maps/cama.png" id="1_lpslt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bwtec"]
-size = Vector2(94, 134)
+size = Vector2(94, 91)
 
 [node name="StaticBody2D" type="StaticBody2D" unique_id=1666377429]
 
@@ -13,5 +13,5 @@ position = Vector2(284, 135)
 texture = ExtResource("1_lpslt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=921313940]
-position = Vector2(284, 135)
+position = Vector2(284, 113.5)
 shape = SubResource("RectangleShape2D_bwtec")

@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://cs4qh0iteqa3l"]
+
+[node name="credits-screen" type="Control" unique_id=893817814]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=776110972]
+modulate = Color(0.93877405, 0.012759366, 0.5589976, 1)
+layout_mode = 0
+offset_left = 176.0
+offset_top = 38.0
+offset_right = 1108.0
+offset_bottom = 664.0
+
+[node name="Button" type="Button" parent="." unique_id=483110232]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 47.0
+offset_right = 139.0
+offset_bottom = 149.0
+text = "X"
+
+[node name="Label" type="Label" parent="." unique_id=1020389299]
+layout_mode = 0
+offset_left = 316.0
+offset_top = 175.0
+offset_right = 743.0
+offset_bottom = 473.12497
+scale = Vector2(1.6, 1.6)
+text = "Júlia Vitória de Souza Leite
+	Arte dos Personagens, Itens e Design de Interface
+	Luiz Eduardo Pinheiro Ribeiro
+Trilha Sonora e Efeitos Sonoros\"
+Miguel Pereira Dias
+Programação Geral, IA do Inimigo e Puzzles
+Tamires de Moraes Carvalho
+Layout dos Cenários e Cutscenes"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=853246386]
+layout_mode = 0
+offset_left = 356.0
+offset_top = 84.00001
+offset_right = 783.0
+offset_bottom = 169.00005
+scale = Vector2(1.4, 1.4)
+text = "Créditos"
+horizontal_alignment = 1
+vertical_alignment = 1

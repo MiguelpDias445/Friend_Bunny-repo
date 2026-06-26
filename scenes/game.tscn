@@ -9,9 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://ctjtouivw3vyg" path="res://graphics/objects/chama.png" id="10_dinhu"]
 [ext_resource type="Resource" uid="uid://dl884uj17g0mt" path="res://scenes/inventory/items/vela.tres" id="10_kvuet"]
 [ext_resource type="PackedScene" uid="uid://cqo0uhgcqmftl" path="res://scenes/Enemy/bunny.tscn" id="10_vtaks"]
-[ext_resource type="Resource" uid="uid://cyjii3bwxf28i" path="res://scenes/inventory/items/gun.tres" id="11_kvpfn"]
 [ext_resource type="Resource" uid="uid://h0lcv85g3wwp" path="res://scenes/inventory/items/chave.tres" id="12_ca42v"]
-[ext_resource type="Texture2D" uid="uid://206bccqonpxo" path="res://graphics/objects/arma.png" id="12_kvuet"]
 [ext_resource type="Texture2D" uid="uid://ddh53l2kc6nwb" path="res://graphics/objects/chave.png" id="13_ssvqc"]
 [ext_resource type="Resource" uid="uid://cyssrxilr7c1w" path="res://scenes/inventory/items/isqueiro.tres" id="13_trtic"]
 [ext_resource type="Texture2D" uid="uid://pd7cwdn8oxtc" path="res://graphics/objects/isqueiro.png" id="14_ir15t"]
@@ -57,42 +55,6 @@ scale = Vector2(8324.616, 5109.2305)
 texture = SubResource("CanvasTexture_trtic")
 
 [node name="items" type="Node" parent="Quarto_kaya" unique_id=1815689921]
-
-[node name="gun" parent="Quarto_kaya/items" unique_id=1663156487 instance=ExtResource("5_iywne")]
-show_behind_parent = true
-z_index = -1
-position = Vector2(704, 487)
-scale = Vector2(0.5, 0.5)
-item = ExtResource("11_kvpfn")
-
-[node name="Sprite2D" parent="Quarto_kaya/items/gun" index="0" unique_id=421271159]
-texture = ExtResource("12_kvuet")
-
-[node name="gun2" parent="Quarto_kaya/items" unique_id=903647062 instance=ExtResource("5_iywne")]
-show_behind_parent = true
-z_index = -1
-position = Vector2(779, 442)
-scale = Vector2(0.5, 0.5)
-item = ExtResource("11_kvpfn")
-
-[node name="Sprite2D" parent="Quarto_kaya/items/gun2" index="0" unique_id=421271159]
-texture = ExtResource("12_kvuet")
-
-[node name="EPrompt" parent="Quarto_kaya/items/gun2" index="1" unique_id=708527153]
-metadata/_edit_use_anchors_ = true
-
-[node name="gun3" parent="Quarto_kaya/items" unique_id=1458061218 instance=ExtResource("5_iywne")]
-show_behind_parent = true
-z_index = -1
-position = Vector2(819, 503)
-scale = Vector2(0.5, 0.5)
-item = ExtResource("11_kvpfn")
-
-[node name="Sprite2D" parent="Quarto_kaya/items/gun3" index="0" unique_id=421271159]
-texture = ExtResource("12_kvuet")
-
-[node name="EPrompt" parent="Quarto_kaya/items/gun3" index="1" unique_id=708527153]
-metadata/_edit_use_anchors_ = true
 
 [node name="isqueiro" parent="Quarto_kaya/items" unique_id=1904964783 instance=ExtResource("5_iywne")]
 show_behind_parent = true
@@ -170,13 +132,19 @@ position = Vector2(2520, 464)
 [node name="Doors" type="Node" parent="." unique_id=546249815]
 
 [node name="Sala_ka" parent="Doors" unique_id=850194827 instance=ExtResource("14_trtic")]
-position = Vector2(869, 560)
+position = Vector2(856, 563)
+
+[node name="Sprite2D" parent="Doors/Sala_ka" index="0" unique_id=1926717306]
+visible = false
 
 [node name="Marker2D" parent="Doors/Sala_ka" index="2" unique_id=1832150890]
-position = Vector2(1576, -76)
+position = Vector2(1600, -77)
 
 [node name="Ka_sala" parent="Doors" unique_id=1324000028 instance=ExtResource("14_trtic")]
-position = Vector2(2396, 478)
+position = Vector2(2383, 481)
+
+[node name="Sprite2D" parent="Doors/Ka_sala" index="0" unique_id=1926717306]
+visible = false
 
 [node name="Marker2D" parent="Doors/Ka_sala" index="2" unique_id=1832150890]
 position = Vector2(-1548, 85)
@@ -185,22 +153,31 @@ position = Vector2(-1548, 85)
 position = Vector2(1094, 1441)
 
 [node name="Marker2D" parent="Doors/Pais_sala" index="2" unique_id=1832150890]
-position = Vector2(1662, -949)
+position = Vector2(1657, -963)
 
 [node name="Sala_pais" parent="Doors" unique_id=165424449 instance=ExtResource("14_trtic")]
-position = Vector2(2741, 532)
+position = Vector2(2737, 516)
+
+[node name="Sprite2D" parent="Doors/Sala_pais" index="0" unique_id=1926717306]
+visible = false
 
 [node name="Marker2D" parent="Doors/Sala_pais" index="2" unique_id=1832150890]
 position = Vector2(-1633, 860)
 
 [node name="Sala_cozinha" parent="Doors" unique_id=956786254 instance=ExtResource("14_trtic")]
-position = Vector2(2395, 531)
+position = Vector2(2383, 529)
+
+[node name="Sprite2D" parent="Doors/Sala_cozinha" index="0" unique_id=1926717306]
+visible = false
 
 [node name="Marker2D" parent="Doors/Sala_cozinha" index="2" unique_id=1832150890]
 position = Vector2(-13, 802)
 
 [node name="Cozinha_sala" parent="Doors" unique_id=1718460966 instance=ExtResource("14_trtic")]
 position = Vector2(2402, 1330)
+
+[node name="Sprite2D" parent="Doors/Cozinha_sala" index="0" unique_id=1926717306]
+visible = false
 
 [node name="Marker2D" parent="Doors/Cozinha_sala" index="2" unique_id=1832150890]
 position = Vector2(42, -793)
@@ -220,7 +197,7 @@ max_distance = 16384.0
 modulate = Color(0.6542321, 0.6542321, 0.654232, 1)
 show_behind_parent = true
 z_index = -1
-position = Vector2(2001, 1248)
+position = Vector2(2042, 1184)
 scale = Vector2(0.4, 0.4)
 
 [node name="items" type="Node" parent="Cozinha" unique_id=68771630]
@@ -259,9 +236,6 @@ metadata/_edit_use_anchors_ = true
 [node name="CollisionShape2D" parent="Quarto_pais/items/giz" index="2" unique_id=837491049]
 scale = Vector2(0.7, 0.7)
 
-[editable path="Quarto_kaya/items/gun"]
-[editable path="Quarto_kaya/items/gun2"]
-[editable path="Quarto_kaya/items/gun3"]
 [editable path="Quarto_kaya/items/isqueiro"]
 [editable path="Sala/items/vela"]
 [editable path="Sala/items/chave"]

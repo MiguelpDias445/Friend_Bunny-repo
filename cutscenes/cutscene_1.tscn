@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://iey2m48r441j"]
+
+[ext_resource type="VideoStream" uid="uid://b4t0scvfwgdoj" path="res://cutscenes/copy_1D7C290E-F05B-4C72-AA6B-1DA00B36DB7F.ogv" id="1_62shd"]
+[ext_resource type="Script" uid="uid://bvjns5gfwy4xp" path="res://cutscenes/button.gd" id="2_7kd3d"]
+
+[node name="cutscene_1" type="Node2D" unique_id=1242600565]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1009492208]
+offset_left = -671.0
+offset_top = -379.0
+offset_right = 1249.0
+offset_bottom = 701.0
+scale = Vector2(0.7, 0.7)
+stream = ExtResource("1_62shd")
+autoplay = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=610809740]
+
+[node name="Button" type="Button" parent="." unique_id=1844255449]
+offset_left = 392.0
+offset_top = 282.0
+offset_right = 590.0
+offset_bottom = 313.0
+text = "Skip"
+script = ExtResource("2_7kd3d")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

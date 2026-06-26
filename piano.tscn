@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cpjt57bi1ee5w" path="res://graphics/maps/piano.png" id="1_onqjq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rkxpl"]
-size = Vector2(108, 122)
+size = Vector2(108, 89)
 
 [node name="StaticBody2D" type="StaticBody2D" unique_id=2133603886]
 
@@ -13,5 +13,5 @@ position = Vector2(310, 125)
 texture = ExtResource("1_onqjq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1896645787]
-position = Vector2(309, 127)
+position = Vector2(309, 110.5)
 shape = SubResource("RectangleShape2D_rkxpl")

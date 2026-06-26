@@ -1,18 +1,18 @@
 {
   "julia": {
-    "nome": "Júlia Vitória de Souza Leite",
-    "descricao": "Arte dos Personagens, Itens e Design de Interface"
+	"nome": "Júlia Vitória de Souza Leite",
+	"descricao": "Arte dos Personagens, Itens e Design de Interface"
   },
   "luiz": {
-    "nome": "Luiz Eduardo Pinheiro Ribeiro",
-    "descricao": "Trilha Sonora e Efeitos Sonoros"
+	"nome": "Luiz Eduardo Pinheiro Ribeiro",
+	"descricao": "Trilha Sonora e Efeitos Sonoros"
   },
   "miguel": {
-    "nome": "Miguel Pereira Dias",
-    "descricao": "Programação Geral, IA do Inimigo e Puzzles"
+	"nome": "Miguel Pereira Dias",
+	"descricao": "Programação Geral, IA do Inimigo e Puzzles"
   },
   "tamires": {
-    "nome": "Tamires de Moraes Carvalho",
-    "descricao": "Layout dos Cenários e Cutscenes"
+	"nome": "Tamires de Moraes Carvalho",
+	"descricao": "Layout dos Cenários e Cutscenes"
   }
 }
